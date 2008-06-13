@@ -1,0 +1,76 @@
+<printer id="printer/Samsung-CLP-300">
+  <make>Samsung</make>
+  <model>CLP-300</model>
+  <mechanism>
+    <laser />
+    <color />
+    <resolution>
+      <dpi>
+        <x>1200</x>
+        <y>1200</y>
+      </dpi>
+    </resolution>
+	<margins>
+	    <general>
+		<unit>mm</unit>
+		<top>4.23164</top>
+		<bottom>4.23164</bottom>
+		<left>3.175</left>
+		<right>3.175</right>
+	    </general>
+	</margins>
+	<consumables>
+	    <comments> <en>
+		Toner Black (2000 prints) - $54
+		Toner Yellow (1000 prints) - $45
+		Toner Magenta (1000 prints) - $45
+		Toner Cyan (1000 prints) - $45
+		Waste Toner (5000 prints) - $10
+		Drum Kit (20000 prints) - $96
+	    </en> </comments>
+	    <partno>CLP-K300A</partno>
+	    <partno>CLP-Y300A</partno>
+	    <partno>CLP-M300A</partno>
+	    <partno>CLP-C300A</partno>
+	    <partno>CLP-W300A</partno>
+	    <partno>CLP-R300A</partno>
+	</consumables>
+  </mechanism>
+  <url>http://www.samsung.com/Products/PrinterandMultifunction/ColorLaserPrinters/CLP_300NXAA.asp</url>
+  <lang>
+    <proprietary />
+  </lang>
+  <autodetect>
+  </autodetect>
+  <functionality>D</functionality>
+  <driver>foo2qpdl</driver>
+  <!--no "contrib_url"-->
+  <comments>
+    <en>
+
+    The Samsung CLP-300 is USB-only and the Samsung CLP-300N has a
+    network connector.&lt;p&gt;
+
+    This is a cheap color laser printer with a proprietary
+    language. Samsung provides a closed-source driver on their web
+    site, the "Unified Linux Driver", a driver package containing CUPS
+    drivers and PPDs for all Samsung printers. Version 2.00.90 and
+    newer supports also this printer. Output is raster-only, and due
+    to glitches in the software, monochrome sources are output as
+    color (visible flecks of cyan, magenta, and yellow). It is also
+    not easy to install this driver in arbitrary distributions. See
+    the user reports below in the &lt;a
+    href=&quot;show_printer.cgi?recnum=Samsung-CLP-510&quot;&gt;entry
+    for the CLP-510&lt;/a&gt;.&lt;p&gt;
+
+    As the first free software printer driver Rick Richardson's
+    foo2qpdl supports this printer, but the driver still needs
+    testing. So please try out this printer with SpliX and report your
+    results to the author of the driver.&lt;p&gt;
+
+    Note that this printer does not (yet) work with the SpliX. The
+    support by the SpliX driver is still under development.&lt;p&gt;
+
+    </en>
+  </comments>
+</printer>

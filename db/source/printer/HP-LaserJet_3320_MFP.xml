@@ -1,0 +1,61 @@
+<printer id="printer/HP-LaserJet_3320_MFP">
+  <make>HP</make>
+  <model>LaserJet 3320 MFP</model>
+  <mechanism>
+    <laser/><!--not "color"-->
+    <resolution>
+      <dpi>
+        <x>1200</x>
+        <y>1200</y>
+      </dpi>
+    </resolution>
+    <consumables>
+    <!--no comments--><!--one or more "partno" elements.--></consumables>
+  </mechanism>
+  <url>http://hp.com</url>
+  <lang>
+    <postscript level="2">
+    <ppd>PPD/HP/HP_LaserJet_3300_Series.ppd</ppd></postscript>
+    <pcl level="6"/>
+    <pjl/>
+    <text>
+      <charset>us-ascii</charset>
+    </text>
+  </lang>
+  <autodetect>
+    <general>
+      <ieee1284>MFG:Hewlett-Packard;CMD:PJL,MLC,PCL,POSTSCRIPT,PCLXL;MDL:HP LaserJet 3300/3310/3320;CLS:PRINTER;DES:Hewlett-Packard LaserJet 3300/3310/3320;</ieee1284>
+      <manufacturer>Hewlett-Packard</manufacturer>
+      <model>HP LaserJet 3300/3310/3320</model>
+      <description>Hewlett-Packard LaserJet 3300/3310/3320</description>
+      <commandset>PJL,MLC,PCL,POSTSCRIPT,PCLXL</commandset>
+    </general>
+  </autodetect>
+  <functionality>A</functionality>
+  <driver>Postscript</driver>
+  <!--verified-->
+  <!--no "contrib_url"-->
+  <comments>
+    <en>
+    As the HP LaserJet 3300 MFP, but with automatic sheet feeder for
+    the scanner.&lt;p&gt;
+
+    Multifunction printer-scanner-copier. Both printing and scanning
+    work.&lt;p&gt;
+
+    For basic printing functionality use the Postscript PPD. 
+    For advanced functionality such as printer status, maintenance 
+    features, scanning and photo card unload use the &lt;a href=&quot;
+    http://hplip.sf.net/&quot;&gt;HPLIP driver&lt;/a&gt; (which includes 
+    HPIJS). &lt;p&gt;
+
+    Stand-alone copying should just work, it does not need the
+    PC.&lt;p&gt;
+    
+    Postscript level 2, parallel and USB connection.&lt;p&gt;
+
+    </en>
+  </comments>
+</printer>
+
+

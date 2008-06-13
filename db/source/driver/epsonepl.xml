@@ -1,0 +1,66 @@
+<driver id="driver/epsonepl">
+ <name>epsonepl</name>
+ <url>http://sourceforge.net/projects/epsonepl/</url>
+ <execution>
+  <ijs />
+  <prototype></prototype>
+  <ppdentry>
+   *DefaultResolution: 1200x600dpi
+  </ppdentry>
+  <margins>
+   <general>
+    <unit>pt</unit>
+    <relative />
+    <left>12</left>
+    <right>12</right>
+    <top>12</top>
+    <bottom>12</bottom>
+   </general>
+  </margins>
+ </execution>
+ <comments>
+  <en>
+
+    The printers of Epson's EPL "L" series do not understand PCL 5e,
+    PCL 6, or PostScript and so they do not work with standard
+    drivers; they can only be driven through a proprietary
+    language.&lt;p&gt;
+
+    An independent driver was developed in the &lt;a
+    href=&quot;http://sourceforge.net/projects/epsonepl/&quot;&gt;
+    epsonepl&lt;/a&gt; project.&lt;p&gt;
+
+    The driver is IJS-based, GNU Ghostscript 6.53 onwards, AFPL
+    Ghostscript 7.04 onwards, or ESP GhostScript 7.x onwards is
+    required.&lt;p&gt;
+
+    This project is not endorsed by nor affiliated with
+    Epson.&lt;p&gt;
+
+    This driver is reported to work both on the parallel and on the
+    USB port.&lt;p&gt;
+
+    Foomatic data to generate the PPD files is included with the
+    driver, therefore we do not provide this data and PPDs here on the
+    OpenPrinting site,&lt;p&gt;
+
+  </en>
+ </comments>
+ <printers>
+  <printer>
+   <id>printer/Epson-EPL-5700L</id>
+  </printer>
+  <printer>
+   <id>printer/Epson-EPL-5800L</id>
+  </printer>
+  <printer>
+   <id>printer/Epson-EPL-5900L</id>
+  </printer>
+  <printer>
+   <id>printer/Epson-EPL-6100L</id>
+  </printer>
+  <printer>
+   <id>printer/Epson-EPL-6200L</id>
+  </printer>
+ </printers>
+</driver>

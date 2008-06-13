@@ -1,0 +1,64 @@
+<driver id="driver/oki4w">
+ <name>oki4w</name>
+ <url>http://www.cups.org/espgs/index.php</url>
+ <execution>
+  <ghostscript />
+  <prototype>gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -sDEVICE=oki4w%A%Z -sOutputFile=- -</prototype>
+  <margins>
+   <general>
+    <unit>in</unit>
+    <relative />
+    <left>0.125</left>
+    <right>0.125</right>
+    <top>0.07</top>
+    <bottom>0.25</bottom>
+   </general>
+  </margins>
+ </execution>
+ <comments>
+  <en>
+
+    This is a simple GhostScript driver for the Okidata Okipage 4W and
+    similar host-based Okidata laser printers. In contrary to the
+    "oki4drv" it does not need any special daemon but simply
+    integrates in the usual printing workflow.&lt;p&gt;
+
+    The driver was in GNU GhostScript 6.x, but was removed again in
+    7.x. Currently it is available in ESP GhostScript 7.07.x and
+    8.15.x.&lt;p&gt;
+
+  </en>
+ </comments>
+ <printers>
+  <printer>
+   <id>printer/Okidata-OL400w</id><!-- Okidata OL 400w -->
+  </printer>
+  <printer>
+   <id>printer/Okidata-Okipage_4w</id><!-- Okidata Okipage 4w -->
+  </printer>
+  <printer>
+   <id>printer/Okidata-Okipage_4wplus</id><!-- Okidata Okipage 4w+ -->
+  </printer>
+  <printer>
+   <id>printer/Okidata-Okipage_6w</id><!-- Okidata Okipage 6w -->
+  </printer>
+  <printer>
+   <id>printer/Okidata-Okipage_8w</id><!-- Okidata Okipage 8w -->
+   <comments>
+    <en>This printer works mostly with with oki4w by Martin Dalecki.</en>
+   </comments>
+  </printer>
+  <printer>
+   <id>printer/Okidata-Okipage_8w_Lite</id><!-- Okidata Okipage 8w Lite -->
+   <comments>
+    <en>This printer works mostly with with oki4drv by Martin Dalecki.</en>
+   </comments>
+  </printer>
+  <printer>
+   <id>printer/Okidata-Okipage_8z</id><!-- Okidata Okipage 8z -->
+   <comments>
+    <en>Requires version 2 of oki4linux?</en>
+   </comments>
+  </printer>
+ </printers>
+</driver>

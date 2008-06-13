@@ -1,0 +1,34 @@
+<printer id="printer/Lexmark-Optra_Eplus">
+  <make>Lexmark</make>
+  <model>Optra E+</model>
+  <mechanism>
+    <laser/><!--not "color"-->
+    <resolution>
+      <dpi>
+        <x>600</x>
+        <y>600</y>
+      </dpi>
+    </resolution>
+    <consumables>
+    <!--no comments--><!--one or more "partno" elements.--></consumables>
+  </mechanism>
+  <url>http://www.lexmark.com/printers/optra_e+.html</url>
+  <lang>
+    <pcl level="5e"/>
+    <pjl/>
+    <text>
+      <charset>us-ascii</charset>
+    </text>
+  </lang>
+  <autodetect>
+    <general>
+      <commandset>PCL 5 Emulation,NPAP,PJL</commandset>
+      <description>Lexmark Optra E+ LaserPrinter</description>
+      <manufacturer>Lexmark International</manufacturer>
+      <model>Lexmark Optra E+ LaserPrinter</model>
+    </general>
+  </autodetect>
+  <functionality>A</functionality>
+  <driver>hpijs</driver>
+  <!--not "unverified"-->
+<!--no "contrib_url"--><!--no comments!--></printer>

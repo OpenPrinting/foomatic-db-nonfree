@@ -1,0 +1,44 @@
+<printer id="printer/Kyocera-FS-5500">
+  <make>Kyocera</make>
+  <model>FS-5500</model>
+  <mechanism>
+    <laser/>
+    <!--no "color"-->
+    <resolution>
+      <dpi>
+        <x>300</x>
+        <y>300</y>
+      </dpi>
+    </resolution>
+    <consumables>
+      <!--no comments-->
+      <!--one or more "partno" elements.-->
+    </consumables>
+  </mechanism>
+  <url>http://www.kyoceramita.com/</url>
+  <lang>
+    <pcl level="5"/>
+    <postscript level="1"><!--unknown ppd filename "ppd"--></postscript>
+    <!--pjl not known-->
+    <text><charset>us-ascii</charset></text>
+  </lang>
+  <autodetect>
+    <general>
+      <ieee1284>MFG:Kyocera;MDL:FS-5500;</ieee1284>
+      <manufacturer>Kyocera</manufacturer>
+      <model>FS-5500</model>
+      <description>Kyocera FS-5500</description>
+    </general>
+  </autodetect>
+  <functionality>A</functionality>
+  <driver>ljet3</driver>
+  <comments>
+    <en>
+      PCL5 but no PCL5e &lt;br&gt;
+      PostScript level 1 &lt;br&gt;
+      Make sure to use level 1 when using the Foomatic PostScript driver (or use the
+      &lt;a href=&quot;/download/PPD/Kyocera/&quot;&gt;Kyocera PPD file&lt;/a&gt;
+      for PostScript, &lt;a href=&quot;ppd-doc.html&quot;&gt;Instructions&lt;/a&gt;)
+    </en>
+  </comments>
+</printer>

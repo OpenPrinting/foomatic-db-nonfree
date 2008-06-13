@@ -1,0 +1,6 @@
+2008-06-13  Dafydd Crosby <dcrosby@userful.com>
+	* First instantiation of foomatic-db-nonfree.
+	This has been started as a repository of PPD and
+	XML files that may have restrictions that keep
+	them from being used on a variety of machines for
+	licensing and other non-technical reasons.

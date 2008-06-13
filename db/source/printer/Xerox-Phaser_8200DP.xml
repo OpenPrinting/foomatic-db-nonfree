@@ -1,0 +1,30 @@
+<printer id="printer/Xerox-Phaser_8200DP">
+   <make>Xerox</make>
+   <model>Phaser 8200DP</model>
+   <mechanism>
+   <!--not "color"-->
+      <resolution>
+         <dpi>
+            <!--x unknown-->
+            <!--y unknown-->
+         </dpi>
+      <consumables>
+      </consumables>
+      </resolution>
+   </mechanism>
+   <url></url>
+   <lang>
+      <postscript level="3">
+       <ppd>PPD/Xerox/xrx8200dp.ppd</ppd>
+      </postscript>
+      <!--no pjl-->
+      <!--no "text"-->
+   </lang>
+   <functionality>B</functionality>
+   <driver>Postscript</driver>
+   <comments>
+      <en>
+      Foomatic entry made by PPDtoXML T/G 0.18 on 2008-05-25
+      </en>
+   </comments>
+</printer>

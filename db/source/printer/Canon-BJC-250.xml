@@ -1,0 +1,36 @@
+<printer id="printer/Canon-BJC-250">
+  <make>Canon</make>
+  <model>BJC-250</model>
+  <mechanism>
+    <inkjet/>
+    <color/>
+    <resolution>
+      <dpi>
+        <x>360</x>
+        <y>360</y>
+      </dpi>
+    </resolution>
+    <consumables>
+      <comments>
+        <en>cartridge</en>
+      </comments>
+    <!--one or more "partno" elements.--></consumables>
+  </mechanism><!--no "url"-->
+  <lang>
+    <escp/><!--no pjl-->
+    <text>
+      <charset>us-ascii</charset>
+    </text>
+  </lang>
+  <autodetect>
+    <general>
+      <commandset>BJ,LQ,BJL,BJRaster,BSCC</commandset>
+      <description>Canon BJC-250</description>
+      <manufacturer>Canon</manufacturer>
+      <model>BJC-250</model>
+    </general>
+  </autodetect>
+  <functionality>A</functionality>
+  <driver>gutenprint</driver>
+  <!--not "unverified"-->
+<!--no "contrib_url"--><!--no comments!--></printer>

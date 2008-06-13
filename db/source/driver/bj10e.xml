@@ -1,0 +1,20 @@
+<driver id="driver/bj10e">
+ <name>bj10e</name>
+ <url>http://www.cs.wisc.edu/~ghost/doc/printer.htm</url>
+ <execution>
+  <ghostscript />
+  <prototype>gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -sDEVICE=bj10e%A%Z -sOutputFile=- -</prototype>
+ </execution>
+ 
+ <printers>
+  <printer>
+   <id>printer/Canon-BJ-5</id><!-- Canon BJ-5 -->
+  </printer>
+  <printer>
+   <id>printer/Canon-BJ-10e</id><!-- Canon BJ-10e -->
+  </printer>
+  <printer>
+   <id>printer/Canon-BJ-20</id><!-- Canon BJ-20 -->
+  </printer>
+ </printers>
+</driver>

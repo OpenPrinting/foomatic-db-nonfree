@@ -1,0 +1,23 @@
+<driver id="driver/m2400w">
+    <name>m2400w</name>
+    <url>http://m2300w.sf.net/</url>
+    <execution>
+	<nopjl />
+	<filter />
+    </execution>
+    <comments><en>
+
+	This is an open source driver developed for the
+	Minolta magicolor 2400W color laser printer.&lt;p&gt;
+
+        Foomatic execution data, and prefabricated PPD files, are
+        included with the driver itself. Use those.&lt;p&gt;
+
+	Note that both the "m2300w" and "m2400w" drivers are in one
+	source code package.&lt;p&gt;
+	
+    </en></comments>
+    <printers>
+	<printer><id>printer/Minolta-magicolor_2400W</id></printer>
+    </printers>
+</driver>

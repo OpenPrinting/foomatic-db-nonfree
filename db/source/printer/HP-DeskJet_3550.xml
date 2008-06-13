@@ -1,0 +1,50 @@
+<printer id="printer/HP-DeskJet_3550">
+  <make>HP</make>
+  <model>DeskJet 3550</model>
+  <mechanism>
+    <inkjet/>
+    <color/>
+    <resolution>
+      <dpi>
+        <x>2400</x>
+        <y>1200</y>
+      </dpi>
+    </resolution>
+    <consumables>
+      <comments>
+        <en>1 colour (CMY) cartridge or 1 black (K) cartridge</en>
+      </comments>
+    <!--one or more "partno" elements.--></consumables>
+  </mechanism>
+  <url>http://h10010.www1.hp.com/wwpc/us/en/sm/WF05a/18972-236251-236261-14438-236261-305946.html</url>
+  <lang>
+    <proprietary /><!--no pjl-->
+  </lang>
+  <autodetect>
+    <general>
+      <commandset>LDL,DYN</commandset>
+      <description>3550</description>
+      <manufacturer>hp</manufacturer>
+      <model>deskjet 3500</model>
+    </general>
+  </autodetect>
+  <functionality>B</functionality>
+  <!--no "contrib_url"-->
+  <driver>hpijs</driver>
+  <comments>
+    <en>
+    
+    For basic printing functionality use the &lt;a 
+    href=&quot;http://hplip.sf.net/&quot;&gt;HPIJS 
+    driver &lt;/a&gt;. For advanced functionality such
+    as printer status and maintenance features, use the
+    &lt;a href=&quot;http://hplip.sf.net/&quot;&gt;
+    HPLIP driver&lt;/a&gt; (which includes HPIJS). &lt;p&gt;
+
+    Does not understand PCL as most other DeskJets, it uses the
+    so-called &quot;Lightweight Imaging Device Interface
+    Language&quot; (LIDIL).&lt;p&gt;
+
+    </en>
+  </comments>
+</printer>

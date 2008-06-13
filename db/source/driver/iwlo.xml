@@ -1,0 +1,31 @@
+<driver id="driver/iwlo">
+ <name>iwlo</name>
+ <url>http://www.cs.wisc.edu/~ghost/doc/printer.htm</url>
+ <execution>
+  <ghostscript />
+  <prototype />
+ </execution>
+ <comments>
+  <en>See Driver 'iwhi'.</en>
+ </comments>
+ <printers>
+  <printer>
+   <id>printer/Apple-ImageWriter</id><!-- Apple ImageWriter -->
+   <comments>
+    <en>Low resolution</en>
+   </comments>
+  </printer>
+  <printer>
+   <id>printer/Apple-ImageWriter_II</id><!-- Apple ImageWriter II -->
+   <comments>
+    <en>Low resolution</en>
+   </comments>
+  </printer>
+  <printer>
+   <id>printer/Apple-ImageWriter_LQ</id><!-- Apple ImageWriter LQ -->
+   <comments>
+    <en>Low resolution</en>
+   </comments>
+  </printer>
+ </printers>
+</driver>

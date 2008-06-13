@@ -1,0 +1,38 @@
+<printer id="printer/Samsung-ML-1220">
+  <make>Samsung</make>
+  <model>ML-1220</model>
+  <mechanism>
+    <laser/><!--not "color"-->
+    <resolution>
+      <dpi>
+        <x>600</x>
+        <y>600</y>
+      </dpi>
+    </resolution>
+    <consumables>
+      <comments>
+        <en>toner</en>
+      </comments>
+    <!--one or more "partno" elements.--></consumables>
+  </mechanism>
+  <url>http://www.samsungelectronics.co.uk/cgi-bin/ecuk/main/samsunguk_global.jsp?target_pgm=/product/product_type.jsp&amp;prod_path=/Consumer+Products/Computers+%26+Related+Products/Printer</url>
+  <lang>
+    <proprietary/>
+  <!--no pjl--><!--No "text"?--></lang>
+  <autodetect>
+  <!--no known parport probe information--></autodetect>
+  <functionality>A</functionality>
+  <driver>gdi</driver>
+  <!--no "contrib_url"-->
+  <comments>
+    <en>
+
+    One of Samsung's line of host-based lasers.  They generally work
+    well and cost little.
+
+    Samsung sort of supports Linux use, with installable Linux/x86
+    cups drivers often in the box, a penguin often on the box, etc.
+
+    </en>
+  </comments>
+</printer>

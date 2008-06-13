@@ -1,0 +1,27 @@
+<driver id="driver/lips4v">
+  <name>lips4v</name>
+  <url>http://www.openprinting.org/download/japanese_printers/</url>
+  <execution>
+    <ghostscript/>
+    <prototype>gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -sDEVICE=lips4v%A%Z -sOutputFile=- -</prototype>
+    </execution>
+  <comments>
+    <en>
+
+    Driver for Canon's LIPS 4 printer language, vector version. There
+    is also a raster version (&quot;lips4&quot;). This driver is
+    included in &lt;a
+    href=&quot;http://www.cups.org/ghostscript.php&quot;&gt;ESP
+    GhostScript&lt;/a&gt;.&lt;p&gt;
+
+    </en>
+  </comments>
+  <printers>
+    <printer>
+      <id>printer/Canon-LIPS-IVv</id>
+    </printer>
+    <printer>
+      <id>printer/Canon-LBP-470</id>
+    </printer>
+  </printers>
+</driver>

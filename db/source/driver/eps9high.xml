@@ -1,0 +1,23 @@
+<driver id="driver/eps9high">
+ <name>eps9high</name>
+ <url>http://www.cs.wisc.edu/~ghost/doc/printer.htm</url>
+ <execution>
+  <ghostscript />
+  <prototype>gs -q -dBATCH -dPARANOIDSAFER -dQUIET -dNOPAUSE -sDEVICE=eps9high%A%Z -sOutputFile=- -</prototype>
+ </execution>
+ 
+ <printers>
+  <printer>
+   <id>printer/Generic-ESC_P_Dot_Matrix_Printer</id>
+  </printer>
+  <printer>
+   <id>printer/Epson-Dot_Matrix</id><!-- Epson Dot Matrix -->
+  </printer>
+  <printer>
+   <id>printer/Panasonic-KX-P1150</id><!-- Panasonic KX-P1150 -->
+  </printer>
+  <printer>
+   <id>printer/Star-NX-1001</id><!-- Star NX-1001 -->
+  </printer>
+ </printers>
+</driver>
