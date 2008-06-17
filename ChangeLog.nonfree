@@ -1,3 +1,8 @@
+2008-06-17  Dafydd Crosby <dcrosby@userful.com>
+	* Removed files that could conflict with foomatic-db.
+	At this point on, the only files that are to be in this
+	repository are ones that are not in foomatic-db.
+
 2008-06-13  Dafydd Crosby <dcrosby@userful.com>
 	* First instantiation of foomatic-db-nonfree.
 	This has been started as a repository of PPD and
