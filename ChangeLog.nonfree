@@ -1,3 +1,6 @@
+2008-08-28  Dafydd Crosby <dcrosby@userful.com>
+	* PPD/: moved Oce-cm2520 PPD to non-free
+
 2008-06-17  Dafydd Crosby <dcrosby@userful.com>
 	* Removed files that could conflict with foomatic-db.
 	At this point on, the only files that are to be in this
