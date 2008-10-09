@@ -1,3 +1,11 @@
+2008-10-09  Till Kamppeter <till.kamppeter@gmail.com>
+
+	* PPD/dl3100cn.ppd: Moved this PPD over from foomatic-db, its
+	  license is non-free.
+
+	* driver/Postscript-Lexmark.xml: First driver entry for non-free
+	  PPD files.
+
 2008-08-28  Dafydd Crosby <dcrosby@userful.com>
 	* PPD/: moved Oce-cm2520 PPD to non-free
 
