@@ -1,0 +1,90 @@
+
+Non-Free Files for the Foomatic Database
+========================================
+
+foomatic-db-nonfree
+-------------------
+
+This is a repository of PPD and Foomatic XML files that may have
+restrictions that keep them from being used on a variety of machines
+for licensing and other non-technical reasons.
+
+
+Till Kamppeter <till.kamppeter@gmail.com>
+Dafydd Crosby <dcrosby@userful.com>
+
+http://www.openprinting.org/
+
+This README contains mainly info for developers. See the file USAGE if
+you want to know how to use this package.
+
+
+Copying
+-------
+
+The files in this package are published under various different
+licenses. See the Copyright headers of the PPD files and also the
+<license> and <licensetext> sections of the corresponding driver XML
+files.
+
+
+Bugs
+----
+
+If you spot a data error or any other bug, please report it on the
+OpenPrinting bug tracking system:
+
+http://bugs.linux-foundation.org/
+
+Choose "OpenPrinting" as the product and "foomatic-db" as the component.
+
+
+Intro
+-----
+
+This is the stable version of Foomatic. This version is also the base
+of our database web interface on
+
+http://www.openprinting.org/
+
+
+Programs and important files from this package
+----------------------------------------------
+
+db
+
+  The subdirectories of db/ contain Foomatic XML data and PPD files to
+  describe the properties of printers and how they are used with
+  appropriate drivers. The structure is the same as in the foomatic-db
+  package and the XML data files are often based on tthe data in
+  foomatic-db.
+
+configure.ac
+
+  The source from which GNU autoconf generates the "configure" script
+
+acinclude.m4
+
+  Additional macros for the "configure" script
+
+make_configure
+
+  Calls aclocal and autoconf to generate "configure" from "configure.ac" 
+  and "acinclude.m4"
+
+Makefile.in
+
+  The template from which "configure" generates the Makefile
+
+install-sh
+
+  Helper script for "configure"
+
+
+Dependencies
+------------
+
+foomatic-db-engine 4.0.0 or newer and foomatic-db is required to
+handle the XML data in this package.
+
+See the USAGE file for installation details.

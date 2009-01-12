@@ -1,0 +1,116 @@
+2009-01-12  Till Kamppeter <till.kamppeter@gmail.com>
+
+	* COPYING, README, USAGE, Makefile.in, acinclude.m4, configure.ac,
+	  install-sh, make_configure: Added documentation and build system
+	  files.
+
+	* ChangeLog.nonfree, ChangeLog: Renaamed, only the files which get
+	  actually installed (db/ directory) need names distinct from the
+	  files in the foomatiuc-db package.
+
+	* driver/Postscript-Dell.xml, driver/Postscript-Oce-KM.xml,
+	  driver/Postscript-Xerox.xml: Added driver files to cover all
+	  included PPD files.
+
+	* PPD/Lexmark/PS/Lexmark-C520_en.PPD,
+	  PPD/Lexmark/PS/Lexmark-C520.ppd,
+	  PPD/Lexmark/PS/Lexmark-C522_en.PPD,
+	  PPD/Lexmark/PS/Lexmark-C522.ppd,
+	  PPD/Lexmark/PS/Lexmark-C524_en.PPD,
+	  PPD/Lexmark/PS/Lexmark-C524.ppd,
+	  PPD/Lexmark/PS/Lexmark-E350d_en.PPD,
+	  PPD/Lexmark/PS/Lexmark-E350d.ppd,
+	  PPD/Lexmark/PS/Lexmark-E352dn_en.PPD,
+	  PPD/Lexmark/PS/Lexmark-E352dn.ppd: Renamed PPD files to always
+	  have ".ppd" extensions and not ".PPD".
+
+	* PPD/Lexmark/PS/Lexmark-C510.ppd,
+	  PPD/Lexmark/PS/Lexmark-C510b.ppd,
+	  PPD/Lexmark/PS/Lexmark-C750.ppd,
+	  PPD/Lexmark/PS/Lexmark-C752.ppd,
+	  PPD/Lexmark/PS/Lexmark-C752b.ppd,
+	  PPD/Lexmark/PS/Lexmark-C910.ppd,
+	  PPD/Lexmark/PS/Lexmark-C912.ppd, PPD/Oce/Others/Oce-cm2520.ppd,
+	  PPD/Xerox/xrx1235.ppd, PPD/Xerox/xrx128.ppd,
+	  PPD/Xerox/xrx133.ppd, PPD/Xerox/xrx2006.ppd,
+	  PPD/Xerox/xrx2121.ppd, PPD/Xerox/xrx2135.ppd,
+	  PPD/Xerox/xrx2218.ppd, PPD/Xerox/xrx3200.ppd,
+	  PPD/Xerox/xrx3400.ppd, PPD/Xerox/xrx3450.ppd,
+	  PPD/Xerox/xrx3500.ppd, PPD/Xerox/xrx4118.ppd,
+	  PPD/Xerox/xrx4400b.ppd, PPD/Xerox/xrx4400dt.ppd,
+	  PPD/Xerox/xrx4400dx.ppd, PPD/Xerox/xrx4400n.ppd,
+	  PPD/Xerox/xrx4500b.ppd, PPD/Xerox/xrx4500dt.ppd,
+	  PPD/Xerox/xrx4500dx.ppd, PPD/Xerox/xrx4500n.ppd,
+	  PPD/Xerox/xrx4510b.ppd, PPD/Xerox/xrx4510dt.ppd,
+	  PPD/Xerox/xrx4510dx.ppd, PPD/Xerox/xrx4510n.ppd,
+	  PPD/Xerox/xrx5500b.ppd, PPD/Xerox/xrx5500dn.ppd,
+	  PPD/Xerox/xrx5500dt.ppd, PPD/Xerox/xrx5500dx.ppd,
+	  PPD/Xerox/xrx5500n.ppd, PPD/Xerox/xrx6100.ppd,
+	  PPD/Xerox/xrx6120pu.ppd, PPD/Xerox/xrx6130n.ppd,
+	  PPD/Xerox/xrx6180dn.ppd, PPD/Xerox/xrx6180md.ppd,
+	  PPD/Xerox/xrx6200b.ppd, PPD/Xerox/xrx6200dp.ppd,
+	  PPD/Xerox/xrx6200dx.ppd, PPD/Xerox/xrx6200n.ppd,
+	  PPD/Xerox/xrx6250b.ppd, PPD/Xerox/xrx6250dp.ppd,
+	  PPD/Xerox/xrx6250dt.ppd, PPD/Xerox/xrx6250dx.ppd,
+	  PPD/Xerox/xrx6250n.ppd, PPD/Xerox/xrx6300dn.ppd,
+	  PPD/Xerox/xrx6300n.ppd, PPD/Xerox/xrx6350dp.ppd,
+	  PPD/Xerox/xrx6350dt.ppd, PPD/Xerox/xrx6350dx.ppd,
+	  PPD/Xerox/xrx6360dn.ppd, PPD/Xerox/xrx6360dx.ppd,
+	  PPD/Xerox/xrx7242.ppd, PPD/Xerox/xrx7300b.ppd,
+	  PPD/Xerox/xrx7300dn.ppd, PPD/Xerox/xrx7300dt.ppd,
+	  PPD/Xerox/xrx7300dx.ppd, PPD/Xerox/xrx7300n.ppd,
+	  PPD/Xerox/xrx7400df.ppd, PPD/Xerox/xrx7400dn.ppd,
+	  PPD/Xerox/xrx7400dt.ppd, PPD/Xerox/xrx7400dx.ppd,
+	  PPD/Xerox/xrx7400n.ppd, PPD/Xerox/xrx750dp.ppd,
+	  PPD/Xerox/xrx750dx.ppd, PPD/Xerox/xrx750n.ppd,
+	  PPD/Xerox/xrx750p.ppd, PPD/Xerox/xrx7700dn.ppd,
+	  PPD/Xerox/xrx7700dx.ppd, PPD/Xerox/xrx7700gx.ppd,
+	  PPD/Xerox/xrx7750b.ppd, PPD/Xerox/xrx7750dn.ppd,
+	  PPD/Xerox/xrx7750dx.ppd, PPD/Xerox/xrx7750gx.ppd,
+	  PPD/Xerox/xrx7760dx.ppd, PPD/Xerox/xrx7760gx.ppd,
+	  PPD/Xerox/xrx790.ppd, PPD/Xerox/xrx8200b.ppd,
+	  PPD/Xerox/xrx8200dp.ppd, PPD/Xerox/xrx8200dx.ppd,
+	  PPD/Xerox/xrx8200n.ppd, PPD/Xerox/xrx8400b.ppd,
+	  PPD/Xerox/xrx8400bd.ppd, PPD/Xerox/xrx8400dp.ppd,
+	  PPD/Xerox/xrx8400dx.ppd, PPD/Xerox/xrx8400n.ppd,
+	  PPD/Xerox/xrx8500dn.ppd, PPD/Xerox/xrx8500n.ppd,
+	  PPD/Xerox/xrx850dp.ppd, PPD/Xerox/xrx850dx.ppd,
+	  PPD/Xerox/xrx850n.ppd, PPD/Xerox/xrx8550dp.ppd,
+	  PPD/Xerox/xrx8550dt.ppd, PPD/Xerox/xrx8550dx.ppd,
+	  PPD/Xerox/xrx8560dn.ppd, PPD/Xerox/xrx860b.ppd,
+	  PPD/Xerox/xrx860dp.ppd, PPD/Xerox/xrx860dx.ppd,
+	  PPD/Xerox/xrx860n.ppd, PPD/Xerox/xrx8860.ppd,
+	  PPD/Xerox/xrxc2424.ppd, PPD/Xerox/xrxn17.ppd,
+	  PPD/Xerox/xrxn2125.ppd, PPD/Xerox/xrxn24.ppd,
+	  PPD/Xerox/xrxn32.ppd, PPD/Xerox/xrxn3225.ppd,
+	  PPD/Xerox/xrxn40.ppd, PPD/Xerox/xrxn4025.ppd,
+	  PPD/Xerox/xrxn4525.ppd, PPD/Xerox/xrxpe120.ppd,
+	  PPD/Xerox/xrxwcm20.ppd, PPD/Xerox/xrxwcm24.ppd,
+	  PPD/Xerox/xxrm118.ppd, PPD/Lexmark/PS/Lexmark-C520.ppd,
+	  PPD/Lexmark/PS/Lexmark-C522.ppd,
+	  PPD/Lexmark/PS/Lexmark-C524.ppd,
+	  PPD/Lexmark/PS/Lexmark-E350d.ppd,
+	  PPD/Lexmark/PS/Lexmark-E352dn.ppd: Corrected file permissions.
+
+2008-10-09  Till Kamppeter <till.kamppeter@gmail.com>
+
+	* PPD/dl3100cn.ppd: Moved this PPD over from foomatic-db, its
+	  license is non-free.
+
+	* driver/Postscript-Lexmark.xml: First driver entry for non-free
+	  PPD files.
+
+2008-08-28  Dafydd Crosby <dcrosby@userful.com>
+	* PPD/: moved Oce-cm2520 PPD to non-free
+
+2008-06-17  Dafydd Crosby <dcrosby@userful.com>
+	* Removed files that could conflict with foomatic-db.
+	At this point on, the only files that are to be in this
+	repository are ones that are not in foomatic-db.
+
+2008-06-13  Dafydd Crosby <dcrosby@userful.com>
+	* First instantiation of foomatic-db-nonfree.
+	This has been started as a repository of PPD and
+	XML files that may have restrictions that keep
+	them from being used on a variety of machines for
+	licensing and other non-technical reasons.
