@@ -1,0 +1,1139 @@
+*PPD-Adobe: "4.3"
+*% Adobe Systems PostScript(R) Printer Description File
+*% For GENICOM Intelliprint mL280+
+*% Copyright (c) 1987-1996 Adobe Systems Incorporated. 
+*% Copyright (c) 1999 GENICOM Corporation
+*% All Rights Reserved. 
+*% Permission is granted for redistribution of this file as
+*% long as this copyright notice is intact and the contents
+*% of the file is not altered in any way from its original form.
+*% End of Copyright statement
+
+*FileVersion: "1.0"
+*FormatVersion: "4.3"
+*LanguageEncoding: ISOLatin1
+*LanguageVersion: English
+
+*Manufacturer: "GENICOM"
+*ModelName: "GENICOM Intelliprint mL280+"
+*PCFileName: "GNML280+.PPD"
+*Product: "(GENICOM Intelliprint mL280+)"
+*PSVersion: "(3010.106) 1"
+*ShortNickName: "GENICOM Intelliprint mL280+"
+*NickName: "GENICOM Intelliprint mL280+"
+
+*% ========== 5.4 Installable Options, and Constraints ======================================
+
+*OpenGroup: InstallableOptions
+
+*OpenUI *InstalledMemory/Installed Memory: PickOne
+*DefaultInstalledMemory: 64Meg
+*InstalledMemory 64Meg/Standard 64 MB RAM: ""
+*InstalledMemory 128Meg/128 MB RAM: ""
+*InstalledMemory 192Meg/192 MB RAM: ""
+*InstalledMemory 256Meg/256 MB RAM: ""
+*?InstalledMemory: "currentsystemparams /InstalledRam get 1048576 div cvi 10 string cvs print (Meg)= flush"
+*CloseUI: *InstalledMemory
+
+*OpenUI *Option1/Duplex Option: Boolean
+*DefaultOption1: False
+*Option1 True/Installed: ""
+*Option1 False/Not Installed: ""
+*?Option1: "currentpagedevice /Duplex known {(True)}{(False)} ifelse = flush"
+*CloseUI: *Option1
+
+*OpenUI *Option2/500 Sheet Feeder 1: Boolean
+*DefaultOption2: False
+*Option2 True/Installed: ""
+*Option2 False/Not Installed: ""
+*?Option2: "
+currentpagedevice dup /InputAttributes known
+ {/InputAttributes get 2 known {(True)}{(False)} ifelse}
+ {pop (Unknown)}
+ifelse = flush"
+*End
+*CloseUI: *Option2
+
+*OpenUI *Option3/500 Sheet Feeder 2: Boolean
+*DefaultOption3: False
+*Option3 True/Installed: ""
+*Option3 False/Not Installed: ""
+*?Option3: "
+currentpagedevice dup /InputAttributes known
+ {/InputAttributes get 3 known {(True)}{(False)} ifelse}
+ {pop (Unknown)}
+ifelse = flush"
+*End
+*CloseUI: *Option3
+
+*OpenUI *Option4/High Capacity Feeder: Boolean
+*DefaultOption4: False
+*Option4 True/Installed: ""
+*Option4 False/Not Installed: ""
+*?Option4: "
+currentpagedevice dup /InputAttributes known
+ { %(found the InputAttributes) 
+   /InputAttributes get 3 known {(True)}
+   % False - no 3 found
+   {/InputAttributes get 2 known { (True) } {(False)} ifelse
+   } ifelse
+ } 
+ {pop (Unknown)} ifelse = flush"
+*End
+*CloseUI: *Option4
+
+*OpenUI *Option5/Stacker: Boolean
+*DefaultOption5: False
+*Option5 True/Installed: ""
+*Option5 False/Not Installed: ""
+*?Option5: "
+currentpagedevice dup /OutputAttributes known
+ {/OutputAttributes get 2 known {(True)}{(False)} ifelse}
+ {pop (Unknown)}
+ifelse = flush"
+*End
+*CloseUI: *Option5
+
+
+*CloseGroup: InstallableOptions
+
+*% Media constraints 
+
+*% Optional Duplex Unit constraints
+*UIConstraints: *Option1 False *Duplex
+*UIConstraints: *Duplex  *Option1 False
+
+*UIConstraints: *Option1 False *GNIgnoreDuplex
+*UIConstraints: *GNIgnoreDuplex  *Option1 False
+
+*UIConstraints: *Duplex DuplexNoTumble *PageSize Env10
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvMonarch
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvC5
+*UIConstraints: *Duplex DuplexNoTumble *PageSize EnvDL
+*UIConstraints: *Duplex DuplexNoTumble *PageSize A6
+*UIConstraints: *PageSize A6 *Duplex DuplexNoTumble 
+*UIConstraints: *PageSize Env10 *Duplex DuplexNoTumble 
+*UIConstraints: *PageSize EnvMonarch *Duplex DuplexNoTumble 
+*UIConstraints: *PageSize EnvC5 *Duplex DuplexNoTumble 
+*UIConstraints: *PageSize EnvDL *Duplex DuplexNoTumble 
+
+*UIConstraints: *Duplex DuplexNoTumble *PageRegion Env10
+*UIConstraints: *Duplex DuplexNoTumble *PageRegion EnvMonarch
+*UIConstraints: *Duplex DuplexNoTumble *PageRegion EnvC5
+*UIConstraints: *Duplex DuplexNoTumble *PageRegion EnvDL
+*UIConstraints: *Duplex DuplexNoTumble *PageRegion A6
+*UIConstraints: *PageRegion A6 *Duplex DuplexNoTumble 
+*UIConstraints: *PageRegion Env10 *Duplex DuplexNoTumble 
+*UIConstraints: *PageRegion EnvMonarch *Duplex DuplexNoTumble 
+*UIConstraints: *PageRegion EnvC5 *Duplex DuplexNoTumble 
+*UIConstraints: *PageRegion EnvDL *Duplex DuplexNoTumble 
+
+*UIConstraints: *Duplex DuplexTumble *PageSize Env10
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvMonarch
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvC5
+*UIConstraints: *Duplex DuplexTumble *PageSize EnvDL
+*UIConstraints: *Duplex DuplexTumble *PageSize A6
+*UIConstraints: *PageSize A6 *Duplex DuplexTumble 
+*UIConstraints: *PageSize Env10 *Duplex DuplexTumble 
+*UIConstraints: *PageSize EnvMonarch *Duplex DuplexTumble 
+*UIConstraints: *PageSize EnvC5 *Duplex DuplexTumble 
+*UIConstraints: *PageSize EnvDL *Duplex DuplexTumble 
+
+*UIConstraints: *Duplex DuplexTumble *PageRegion Env10
+*UIConstraints: *Duplex DuplexTumble *PageRegion EnvMonarch
+*UIConstraints: *Duplex DuplexTumble *PageRegion EnvC5
+*UIConstraints: *Duplex DuplexTumble *PageRegion EnvDL
+*UIConstraints: *Duplex DuplexTumble *PageRegion A6
+*UIConstraints: *PageRegion A6 *Duplex DuplexTumble 
+*UIConstraints: *PageRegion Env10 *Duplex DuplexTumble 
+*UIConstraints: *PageRegion EnvMonarch *Duplex DuplexTumble 
+*UIConstraints: *PageRegion EnvC5 *Duplex DuplexTumble 
+*UIConstraints: *PageRegion EnvDL *Duplex DuplexTumble 
+
+*% Tray paper size constraints
+*UIConstraints: *InputSlot Slot1 *PageSize EnvDL
+*UIConstraints: *InputSlot Slot2 *PageSize EnvDL
+*UIConstraints: *InputSlot Slot3 *PageSize EnvDL
+
+*UIConstraints: *PageSize EnvDL *InputSlot Slot1
+*UIConstraints: *PageSize EnvDL *InputSlot Slot2
+*UIConstraints: *PageSize EnvDL *InputSlot Slot3
+
+*UIConstraints: *InputSlot Slot1 *PageRegion EnvDL
+*UIConstraints: *InputSlot Slot2 *PageRegion EnvDL
+*UIConstraints: *InputSlot Slot3 *PageRegion EnvDL
+
+*UIConstraints: *PageRegion EnvDL *InputSlot Slot1
+*UIConstraints: *PageRegion EnvDL *InputSlot Slot2
+*UIConstraints: *PageRegion EnvDL *InputSlot Slot3
+
+*% HCF paper size constraints
+*UIConstraints: *InputSlot Slot4 *PageSize Legal
+*UIConstraints: *InputSlot Slot4 *PageSize A3
+*UIConstraints: *InputSlot Slot4 *PageSize A5
+*UIConstraints: *InputSlot Slot4 *PageSize B4
+*UIConstraints: *InputSlot Slot4 *PageSize B5
+*UIConstraints: *InputSlot Slot4 *PageSize Executive
+*UIConstraints: *InputSlot Slot4 *PageSize FanFoldGermanLegal
+*UIConstraints: *InputSlot Slot4 *PageSize Statement
+*UIConstraints: *InputSlot Slot4 *PageSize Tabloid
+*UIConstraints: *InputSlot Slot4 *PageSize A6
+*UIConstraints: *InputSlot Slot4 *PageSize Env10
+*UIConstraints: *InputSlot Slot4 *PageSize EnvMonarch
+*UIConstraints: *InputSlot Slot4 *PageSize EnvC5
+*UIConstraints: *InputSlot Slot4 *PageSize EnvDL
+
+*UIConstraints: *PageSize Legal *InputSlot Slot4 
+*UIConstraints: *PageSize A3 *InputSlot Slot4 
+*UIConstraints: *PageSize A5 *InputSlot Slot4 
+*UIConstraints: *PageSize B4 *InputSlot Slot4 
+*UIConstraints: *PageSize B5 *InputSlot Slot4 
+*UIConstraints: *PageSize Executive *InputSlot Slot4 
+*UIConstraints: *PageSize FanFoldGermanLegal *InputSlot Slot4 
+*UIConstraints: *PageSize Statement *InputSlot Slot4 
+*UIConstraints: *PageSize Tabloid *InputSlot Slot4 
+*UIConstraints: *PageSize A6 *InputSlot Slot4 
+*UIConstraints: *PageSize Env10 *InputSlot Slot4 
+*UIConstraints: *PageSize EnvMonarch *InputSlot Slot4 
+*UIConstraints: *PageSize EnvC5 *InputSlot Slot4 
+*UIConstraints: *PageSize EnvDL *InputSlot Slot4 
+
+*UIConstraints: *InputSlot Slot4 *PageRegion Legal
+*UIConstraints: *InputSlot Slot4 *PageRegion A3
+*UIConstraints: *InputSlot Slot4 *PageRegion A5
+*UIConstraints: *InputSlot Slot4 *PageRegion B4
+*UIConstraints: *InputSlot Slot4 *PageRegion B5
+*UIConstraints: *InputSlot Slot4 *PageRegion Executive
+*UIConstraints: *InputSlot Slot4 *PageRegion FanFoldGermanLegal
+*UIConstraints: *InputSlot Slot4 *PageRegion Statement
+*UIConstraints: *InputSlot Slot4 *PageRegion Tabloid
+*UIConstraints: *InputSlot Slot4 *PageRegion A6
+*UIConstraints: *InputSlot Slot4 *PageRegion Env10
+*UIConstraints: *InputSlot Slot4 *PageRegion EnvMonarch
+*UIConstraints: *InputSlot Slot4 *PageRegion EnvC5
+*UIConstraints: *InputSlot Slot4 *PageRegion EnvDL
+
+*UIConstraints: *PageRegion Legal *InputSlot Slot4 
+*UIConstraints: *PageRegion A3 *InputSlot Slot4 
+*UIConstraints: *PageRegion A5 *InputSlot Slot4 
+*UIConstraints: *PageRegion B4 *InputSlot Slot4 
+*UIConstraints: *PageRegion B5 *InputSlot Slot4 
+*UIConstraints: *PageRegion Executive *InputSlot Slot4 
+*UIConstraints: *PageRegion FanFoldGermanLegal *InputSlot Slot4 
+*UIConstraints: *PageRegion Statement *InputSlot Slot4 
+*UIConstraints: *PageRegion Tabloid *InputSlot Slot4 
+*UIConstraints: *PageRegion A6 *InputSlot Slot4 
+*UIConstraints: *PageRegion Env10 *InputSlot Slot4 
+*UIConstraints: *PageRegion EnvMonarch *InputSlot Slot4 
+*UIConstraints: *PageRegion EnvC5 *InputSlot Slot4 
+*UIConstraints: *PageRegion EnvDL *InputSlot Slot4 
+
+*UIConstraints: *InputSlot Slot4 *MediaType Transparency
+*UIConstraints: *MediaType Transparency *InputSlot Slot4
+*UIConstraints: *InputSlot Slot4 *MediaType Label
+*UIConstraints: *MediaType Label *InputSlot Slot4
+
+*% Optional input tray constraints
+*UIConstraints: *InputSlot Slot2 *Option2 False
+*UIConstraints: *Option2 False *InputSlot Slot2
+*UIConstraints: *InputSlot Slot3 *Option3 False
+*UIConstraints: *Option3 False *InputSlot Slot3
+*UIConstraints: *InputSlot Slot4 *Option4 False
+*UIConstraints: *Option4 False *InputSlot Slot4
+
+*UIConstraints: *Option2 False *Option3 True
+*UIConstraints: *Option3 True *Option2 False
+*UIConstraints: *Option3 True  *Option4 True
+*UIConstraints: *Option4 True  *Option3 True
+
+*% *UIConstraints: *OutputBin FaceDown *Jog EndOfJob
+*% *UIConstraints: *Jog EndOfJob *OutputBin FaceDown 
+
+*UIConstraints: *OutputBin Stacker *MediaType Label
+*UIConstraints: *OutputBin Stacker *MediaType Transparency
+*UIConstraints: *MediaType Label *OutputBin Stacker
+*UIConstraints: *MediaType Transparency *OutputBin Stacker
+
+*UIConstraints: *OutputBin Stacker *PageSize Tabloid
+*UIConstraints: *OutputBin Stacker *PageSize A3
+*UIConstraints: *OutputBin Stacker *PageSize Legal
+*UIConstraints: *OutputBin Stacker *PageSize FanFoldGermanLegal
+*UIConstraints: *OutputBin Stacker *PageSize B4
+*UIConstraints: *OutputBin Stacker *PageSize A6
+*UIConstraints: *OutputBin Stacker *PageSize EnvMonarch
+*UIConstraints: *OutputBin Stacker *PageSize Env10
+*UIConstraints: *OutputBin Stacker *PageSize EnvC5
+*UIConstraints: *OutputBin Stacker *PageSize EnvDL
+
+*UIConstraints: *OutputBin Stacker *PageRegion Tabloid
+*UIConstraints: *OutputBin Stacker *PageRegion A3
+*UIConstraints: *OutputBin Stacker *PageRegion Legal
+*UIConstraints: *OutputBin Stacker *PageRegion FanFoldGermanLegal
+*UIConstraints: *OutputBin Stacker *PageRegion B4
+*UIConstraints: *OutputBin Stacker *PageRegion A6
+*UIConstraints: *OutputBin Stacker *PageRegion EnvMonarch
+*UIConstraints: *OutputBin Stacker *PageRegion Env10
+*UIConstraints: *OutputBin Stacker *PageRegion EnvC5
+*UIConstraints: *OutputBin Stacker *PageRegion EnvDL
+
+*UIConstraints: *PageSize A3 *OutputBin Stacker
+*UIConstraints: *PageSize Tabloid *OutputBin Stacker
+*UIConstraints: *PageSize Legal *OutputBin Stacker
+*UIConstraints: *PageSize FanFoldGermanLegal *OutputBin Stacker
+*UIConstraints: *PageSize B4 *OutputBin Stacker
+*UIConstraints: *PageSize A6 *OutputBin Stacker
+*UIConstraints: *PageSize EnvMonarch *OutputBin Stacker
+*UIConstraints: *PageSize Env10 *OutputBin Stacker
+*UIConstraints: *PageSize EnvC5 *OutputBin Stacker
+*UIConstraints: *PageSize EnvDL *OutputBin Stacker
+
+*UIConstraints: *PageRegion A3 *OutputBin Stacker
+*UIConstraints: *PageRegion Tabloid *OutputBin Stacker
+*UIConstraints: *PageRegion Legal *OutputBin Stacker
+*UIConstraints: *PageRegion FanFoldGermanLegal *OutputBin Stacker
+*UIConstraints: *PageRegion B4 *OutputBin Stacker
+*UIConstraints: *PageRegion A6 *OutputBin Stacker
+*UIConstraints: *PageRegion EnvMonarch *OutputBin Stacker
+*UIConstraints: *PageRegion Env10 *OutputBin Stacker
+*UIConstraints: *PageRegion EnvC5 *OutputBin Stacker
+*UIConstraints: *PageRegion EnvDL *OutputBin Stacker
+
+*% ========== 5.5 Basic Device Capabilities =================================================
+
+*ColorDevice: False
+*DefaultColorSpace: Gray
+
+*FileSystem: True
+*?FileSystem: "
+false
+(*) {
+   /DevDict exch currentdevparams def
+   DevDict /Writeable known {DevDict /Writeable get} {false} ifelse
+   DevDict /Mounted   known {DevDict /Mounted   get} {false} ifelse
+   DevDict /HasNames  known {DevDict /HasNames  get} {false} ifelse
+   and and {pop true} if
+} 128 string /IODevice resourceforall
+{(True)} {(False)} ifelse = flush"
+*End
+
+*LanguageLevel: "3"
+*Throughput: "40"
+*TTRasterizer: Type42
+*?TTRasterizer: "(Type42) = flush"
+*1284Modes Parallel: Compat Nibble Byte ECP
+
+*% ========== 5.6 System Management =========================================================
+
+*% *PatchFile  would go here for bugs found subsequent to release of this PPD
+*% *?PatchFile would go here for bugs found subsequent to release of this PPD
+*% *JobPatchFile would go here for bugs found subsequent to release of this PPD
+
+*FreeVM: "24982744"
+*VMOption 64Meg/Standard 64 MB RAM: "24982744"
+*VMOption 128Meg/128 MB RAM: "42600000"
+*VMOption 192Meg/192 MB RAM: "64000000"
+*VMOption 256Meg/256 MB RAM: "85300000"
+
+*Reset: "
+  count 1 ge { true exch startjob } {false} ifelse
+  not {
+    (ERROR: *ExitServer cannot start unencapsulated job.) =
+    (       Password is probably invalid.) =
+ } if
+  systemdict /quit get exec
+"
+*End
+*Password: "()" 
+
+*ExitServer: "
+count 1 ge {true exc startjob} {false} ifelse
+not {
+   (ERROR: *ExitServer cannot start unencapsulated job.) =
+   (       Password is probably invalid.) =
+} if"
+*End
+
+*SuggestedJobTimeout: "0"
+*SuggestedManualFeedTimeout: "0"
+*SuggestedWaitTimeout: "20"
+*PrintPSErrors: False
+
+*% ========== 5.7 Emulations and Protocols ==================================================
+
+*Protocols: TBCP PJL
+
+*% 5.8 ========== Features Accessible Only Through Job Control Language =====================
+*JCLBegin: "<1B>%-12345X@PJL JOB<0A>"
+*JCLToPSInterpreter: "@PJL ENTER LANGUAGE = POSTSCRIPT <0A>"
+*JCLEnd: "<1B>%-12345X@PJL EOJ<0A><1B>%-12345X"
+
+*% ========== 5.9 Resolution and Appearance Control =========================================
+
+
+*OpenGroup: Imaging
+
+*OpenUI *Resolution/Resolution: PickOne
+*OrderDependency: 10.0 AnySetup *Resolution
+*DefaultResolution: 600x600dpi
+
+*% *Resolution 300x300dpi/300 x 300 dpi: "
+*%   2 dict
+*%     dup /HWResolution [300 300] put 
+*%     dup /Policies
+*%       1 dict dup /HWResolution 2 put 
+*%   put setpagedevice
+*% "
+*% *End
+*Resolution 600x600dpi/600 x 600 dpi: "
+  2 dict
+    dup /HWResolution [600 600] put 
+    dup /Policies
+      1 dict dup /HWResolution 2 put 
+  put setpagedevice
+"
+*End
+*Resolution 1200x1200dpi/1200 x 1200 dpi: "
+  2 dict
+    dup /HWResolution [1200 1200] put 
+    dup /Policies
+      1 dict dup /HWResolution 2 put 
+  put setpagedevice
+"
+*End
+
+*?Resolution: "
+  save
+    currentpagedevice /HWResolution get
+    aload pop exch cvi
+    (          ) cvs print
+    (x) print cvi (          ) cvs print (dpi)
+    = flush
+  restore
+"
+*End
+*CloseUI: *Resolution
+
+*OpenUI *GNTonerSaver/Toner Saver: PickOne
+*OrderDependency: 10.0 AnySetup *GNTonerSaver
+*DefaultGNTonerSaver: Off
+*GNTonerSaver Off/Off: "
+ << /PostRenderingEnhanceDetails 
+ << /TonerSaver 0 currentpagedevice /PostRenderingEnhanceDetails get {} forall >> 
+ >> setpagedevice"
+*End
+*GNTonerSaver On/On: "
+ << /PostRenderingEnhanceDetails 
+ << /TonerSaver 1 currentpagedevice /PostRenderingEnhanceDetails get {} forall >> 
+ >> setpagedevice"
+*End
+*% *GNTonerSaver Lighter/Lighter: "
+*%  << /PostRenderingEnhanceDetails 
+*%  << /TonerSaver 2 currentpagedevice /PostRenderingEnhanceDetails get {} forall >> 
+*%  >> setpagedevice"
+*% *End
+*% *GNTonerSaver Lightest/Lightest: "
+*%  << /PostRenderingEnhanceDetails 
+*%  << /TonerSaver 3 currentpagedevice /PostRenderingEnhanceDetails get {} forall >> 
+*%  >> setpagedevice"
+*% *End
+*?GNTonerSaver: "
+    [(Off) (On)]
+    currentpagedevice /PostRenderingEnhanceDetails get 
+    /TonerSaver get get = flush
+"
+*End
+*CloseUI: *GNTonerSaver
+
+*% *OpenUI *Smoothing/Enhancement: PickOne
+*% *OrderDependency: 10.0 AnySetup *Smoothing
+*% *DefaultSmoothing: None
+*% *Smoothing None/None: "
+*%  << /PostRenderingEnhanceDetails 
+*%  << /REValue 0 currentpagedevice /PostRenderingEnhanceDetails get {} forall >> 
+*%  >> setpagedevice"
+*% *End
+*% *Smoothing Light/Edge enhancement: "
+*%  << /PostRenderingEnhanceDetails 
+*%  << /REValue 1 currentpagedevice /PostRenderingEnhanceDetails get {} forall >> 
+*%  >> setpagedevice"
+*% *End
+*% *Smoothing Medium/Photo enhancement: "
+*%  << /PostRenderingEnhanceDetails 
+*%  << /REValue 2 currentpagedevice /PostRenderingEnhanceDetails get {} forall >> 
+*%  >> setpagedevice"
+*% *End
+*% *Smoothing Dark/Edge and Photo enhancement: "
+*%  << /PostRenderingEnhanceDetails 
+*%  << /REValue 3 currentpagedevice /PostRenderingEnhanceDetails get {} forall >> 
+*%  >> setpagedevice"
+*% *End
+*% *?Smoothing: "
+*%   [(None) (Light) (Medium) (Dark)]
+*%   currentpagedevice /PostRenderingEnhanceDetails get /REValue get get = flush
+*% "
+*% *End
+*% *CloseUI: *Smoothing
+
+*CloseGroup: Imaging
+
+*% ========== 5.10 Gray Levels and Halftoning ===============================================
+
+*AccurateScreensSupport: True
+*DefaultHalftoneType: 1
+*ScreenAngle: "45"
+*ScreenFreq: "141"
+*DefaultScreenProc: Dot
+*ScreenProc Dot: "{abs exch abs 2 copy add 1 gt {1 sub dup
+mul exch 1 sub dup mul add 1 sub}
+{dup mul exch dup mul add 1 exch sub}
+ifelse}
+bind"
+*End
+*DefaultTransfer: Null
+
+*% *ResScreenAngle 300x300dpi: "45"
+*% *ResScreenFreq 300x300dpi: "75"
+*ResScreenAngle 600x600dpi: "45"
+*ResScreenFreq 600x600dpi: "141"
+*ResScreenAngle 1200x1200dpi: "45"
+*ResScreenFreq 1200x1200dpi: "150"
+
+*% ========== 5.11 Color Adjustment =========================================================
+ 
+
+*% ========== 5.14 Media Selection ==========================================================
+
+*OpenUI *ManualFeed/Manual Feed: Boolean
+*OrderDependency: 14.0 AnySetup *ManualFeed
+*DefaultManualFeed: False
+*ManualFeed True/True: " << /ManualFeed true >> setpagedevice "
+*ManualFeed False/False: " << /ManualFeed false >> setpagedevice "
+*?ManualFeed:"
+save currentpagedevice /ManualFeed known
+{currentpagedevice /ManualFeed get
+ {(True)} {(False)} ifelse
+}
+{(False)}
+ifelse
+= flush
+restore
+"
+*End
+*CloseUI: *ManualFeed
+
+*OpenUI *InputSlot/Input Slot: PickOne
+*OrderDependency: 15.0 AnySetup *InputSlot
+*DefaultInputSlot: Slot1
+*InputSlot Slot0/Front tray: "<<currentpagedevice /InputAttributes get 0 get {}forall /InputAttributes << /Priority [0 1 2 ] >> >> setpagedevice"
+*InputSlot Slot1/Tray 1: "<<currentpagedevice /InputAttributes get 1 get {}forall /InputAttributes << /Priority [1 2 0] >> >> setpagedevice"
+*InputSlot Slot2/Tray 2: "<<currentpagedevice /InputAttributes get 2 get {}forall /InputAttributes << /Priority [2 1 0] >> >> setpagedevice"
+*InputSlot Slot3/Tray 3: "<<currentpagedevice /InputAttributes get 3 get {}forall /InputAttributes << /Priority [3 2 1 0] >> >> setpagedevice"
+*InputSlot Slot4/HCF: "<<currentpagedevice dup /InputAttributes get 3 known
+{/InputAttributes get 3 get {}forall /InputAttributes << /Priority [3 2 1 0] >> >> setpagedevice}
+{/InputAttributes get 2 get {}forall /InputAttributes << /Priority [2 1 0] >> >> setpagedevice}
+ ifelse"
+*End
+*?InputSlot: "(Slot) print currentpagedevice /InputAttributes get /Priority get 0 get 9 string cvs = flush"
+*CloseUI: *InputSlot
+
+*OpenUI *PageSize/PageSize: PickOne
+*OrderDependency: 20.0 AnySetup *PageSize
+*DefaultPageSize: Letter
+*PageSize Letter: "<</PageSize [612 792]>> setpagedevice"
+*PageSize Legal: "<</PageSize [612 1008]>> setpagedevice"
+*PageSize A3: "<</PageSize [842 1191]>> setpagedevice"
+*PageSize A4: "<</PageSize [595 842]>> setpagedevice"
+*PageSize A5: "<</PageSize [420 595]>> setpagedevice"
+*PageSize A6: "<</PageSize [297 420]>> setpagedevice"
+*PageSize B4: "<</PageSize [729 1032]>> setpagedevice"
+*PageSize B5: "<</PageSize [516 729]>> setpagedevice"
+*PageSize Executive: "<</PageSize [522 756]>> setpagedevice"
+*PageSize FanFoldGermanLegal/Folio: "<</PageSize [612 936]>> setpagedevice"
+*PageSize Statement/Half-Letter: "<</PageSize [396 612]>> setpagedevice"
+*PageSize Tabloid/Ledger: "<</PageSize [792 1224]>> setpagedevice"
+*PageSize EnvMonarch/Monarch: "<</PageSize [279 540]>> setpagedevice"
+*PageSize EnvC5/C5: "<</PageSize [459 649]>> setpagedevice"
+*PageSize EnvDL/DL: "<</PageSize [312 623]>> setpagedevice"
+*PageSize Env10/Comm #10: "<</PageSize [297 684]>> setpagedevice"
+*?PageSize: "
+ currentpagedevice /PageSize get aload aload pop gt {exch} if
+ (Unknown) <<
+   /Letter [612 792]
+   /Legal [612 1008]
+   /A4 [595 842]
+   /A3 [842 1191]
+   /A5 [420 595]
+   /A6 [297 420]
+   /B4 [729 1032]
+   /B5 [516 729]
+   /Executive [522 756]
+   /FanFoldGermanLegal [612 936]
+   /Statement [396 612]
+   /Tabloid [792 1224]
+   /EnvMonarch [279 540]
+   /EnvC5 [459 649]
+   /EnvDL [312 623]
+   /Env10 [297 684]
+>>
+ { aload aload pop gt {exch} if 4
+   index sub abs 5 le exch 5 index sub abs 5 le and {exch} if pop
+ } bind forall = pop pop"
+*End
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion/PageRegion: PickOne
+*OrderDependency: 20.0 AnySetup *PageRegion
+*DefaultPageRegion: Letter
+*PageRegion Letter: "<</PageSize [612 792]>> setpagedevice"
+*PageRegion Legal: "<</PageSize [612 1008]>> setpagedevice"
+*PageRegion A3: "<</PageSize [842 1191]>> setpagedevice"
+*PageRegion A4: "<</PageSize [595 842]>> setpagedevice"
+*PageRegion A5: "<</PageSize [420 595]>> setpagedevice"
+*PageRegion A6: "<</PageSize [297 420]>> setpagedevice"
+*PageRegion B4: "<</PageSize [729 1032]>> setpagedevice"
+*PageRegion B5: "<</PageSize [516 729]>> setpagedevice"
+*PageRegion Executive: "<</PageSize [522 756]>> setpagedevice"
+*PageRegion FanFoldGermanLegal/Folio: "<</PageSize [612 936]>> setpagedevice"
+*PageRegion Statement/Half-Letter: "<</PageSize [396 612]>> setpagedevice"
+*PageRegion Tabloid/Ledger: "<</PageSize [792 1224]>> setpagedevice"
+*PageRegion EnvMonarch/Monarch: "<</PageSize [279 540]>> setpagedevice"
+*PageRegion EnvC5/C5: "<</PageSize [459 649]>> setpagedevice"
+*PageRegion EnvDL/DL: "<</PageSize [312 623]>> setpagedevice"
+*PageRegion Env10/Comm #10: "<</PageSize [297 684]>> setpagedevice"
+*CloseUI: *PageRegion
+
+*OpenUI *MediaType/Media Type:  PickOne
+*OrderDependency: 19.0 AnySetup *MediaType
+*DefaultMediaType: AutoSelect
+*MediaType AutoSelect/Any media type: "<< /MediaType null >> setpagedevice"
+*MediaType Plain/Plain: "<< /MediaType (Plain) >> setpagedevice"
+*MediaType Bond/Bond: "<< /MediaType (Bond) >> setpagedevice"
+*MediaType CardStock/Cardstock: "<< /MediaType (CardStock) >> setpagedevice"
+*MediaType Envelope/Envelope: "<< /MediaType (Envelope) >> setpagedevice"
+*MediaType Label/Labels: "<< /MediaType (Label) >> setpagedevice"
+*MediaType Letterhead/Letterhead: "<< /MediaType (Letterhead) >> setpagedevice"
+*MediaType Other/Other: "<< /MediaType (Other) >> setpagedevice"
+*MediaType Postcard/Postcard: "<< /MediaType (Postcard) >> setpagedevice"
+*MediaType Prepunch/Prepunched: "<< /MediaType (Prepunch) >> setpagedevice"
+*MediaType Transparency/Transparency: "<< /MediaType (Transparency) >> setpagedevice"
+*MediaType Colored/Colored: "<< /MediaType (Colored) >> setpagedevice"
+*MediaType Preprinted/Preprinted: "<< /MediaType (Preprinted) >> setpagedevice"
+*?MediaType: "
+currentpagedevice /MediaType known
+{
+<<
+(Plain) (Plain) 
+(Bond) (Bond)
+(CardStock) (CardStock)
+(Envelope) (Envelope)
+(Label) (Label)
+(Letterhead) (Letterhead) 
+(Other) (Other)
+(Postcard) (Postcard)
+(Prepunch) (Prepunch)
+(Transparency) (Transparency)
+(Colored) (Colored)
+(Preprinted) (Preprinted)
+>>
+  currentpagedevice /MediaType get 
+  dup null eq  {pop pop (AutoSelect)} { get } ifelse
+} 
+{(Unknown)} 
+ifelse = flush 
+"
+*End     
+*CloseUI: *MediaType
+
+*% ========== 5.15 Information About Media Sizes ============================================
+
+*DefaultImageableArea: Letter
+*ImageableArea Letter: "0.0 0.0 612 792.0"
+*ImageableArea Legal: "0.0 0.0 612 1008.0"
+*ImageableArea A4: "0.0 0.0 595.0 842.0" 
+*ImageableArea A3: "0.0 0.0 842.0 1191.0"
+*ImageableArea A5: "0.0 0.0 420.0 595.0"
+*ImageableArea A6: "0.0 0.0 297.0 420.0"
+*ImageableArea B4: "0.0 0.0 729.0 1032.0"
+*ImageableArea B5: "0.0 0.0 516.0 729.0"
+*ImageableArea Executive: "0.0 0.0 522.0 756.0"
+*ImageableArea FanFoldGermanLegal/Folio: "0.0 0.0 612.0 936.0"
+*ImageableArea Statement/Half-Letter: "0.0 0.0 396.0 612.0"
+*ImageableArea Tabloid/Ledger: "0.0 0.0 792.0 1224.0"
+*ImageableArea EnvMonarch/Monarch: "0.0 0.0 279.0 540.0"
+*ImageableArea EnvC5/C5: "0.0 0.0 459.0 649.0"
+*ImageableArea EnvDL/DL: "0.0 0.0 312.0 623.0"
+*ImageableArea Env10/Comm #10: "0.0 0.0 297.0 684.0"
+*?ImageableArea: "
+  newpath clippath pathbbox 4 -2 roll
+  exch 2 {10000 mul ceiling 10000 div dup 0 lt {pop 0.0} if 128 string cvs print ( ) print} repeat
+  exch 2 {10000 mul floor   10000 div dup 0 lt {pop 0.0} if 128 string cvs print ( ) print} repeat
+  (\n) print"
+*End
+
+*DefaultPaperDimension: Letter
+*PaperDimension Letter: "612 792"
+*PaperDimension Legal: "612 1008"
+*PaperDimension A4: "595 842"
+*PaperDimension A3: "842 1191"
+*PaperDimension A5: "420 595"
+*PaperDimension A6: "297 420"
+*PaperDimension B4: "729 1032"
+*PaperDimension B5: "516 729"
+*PaperDimension Executive: "522 756"
+*PaperDimension FanFoldGermanLegal/Folio: "612 936"
+*PaperDimension Statement/Half-Letter: "396 612"
+*PaperDimension Tabloid/Ledger: "792 1224"
+*PaperDimension EnvMonarch/Monarch: "279 540"
+*PaperDimension EnvC5/C5: "459 649"
+*PaperDimension EnvDL/DL: "312 624"
+*PaperDimension Env10/Comm #10: "297 684"
+
+*LandscapeOrientation: Any
+
+*% ========== 5.16 CustomPageSizes ==========================================================
+
+*%LeadingEdge Short: ""
+*%LeadingEdge Long: ""
+*%DefaultLeadingEdge: Short 
+*%NonUIConstraints: *InputSlot Slot4 *CustomPageSize True
+*%NonUIConstraints: *CustomPageSize True *InputSlot Slot4 False
+*%NonUIConstraints: *InputSlot Slot4 *LeadingEdge Short
+*%NonUIConstraints: *LeadingEdge Short *InputSlot Slot4
+*% This is the maximum height for the MBF
+*% and the maximum width for the feeder trays.
+*% 300 mm = 850 points
+*% 432 mm = 1224 points
+*%MaxMediaWidth: "790"
+*%MaxMediaHeight: "1440"
+*%CustomPageSize True: "
+*%pop pop pop
+*%(<<) cvx exec /PageSize [5 -2 roll]
+*%/ImagingBBox null
+*%(>>) cvx exec setpagedevice"
+*%End
+*%ParamCustomPageSize Width: 1 points 100 1008
+*%ParamCustomPageSize Height: 2 points 100 1008
+*%ParamCustomPageSize WidthOffset: 4 points 0 0
+*%ParamCustomPageSize HeightOffset: 5 points 0 0
+*%ParamCustomPageSize Orientation: 3 int 0 3
+
+*%VariablePaperSize: True
+
+*% ========== 5.17 Media Handling Features ==================================================
+
+*OpenGroup: Output
+
+*OpenUI *OutputBin/Output Tray: PickOne
+*OrderDependency: 35.0 AnySetup *OutputBin
+*DefaultOutputBin: FaceDown
+*OutputBin FaceDown/Top Output Tray: "<</OutputType (FaceDown)>> setpagedevice"
+*OutputBin Stacker/Stacker: "<</OutputType (OffsetTray)>> setpagedevice"
+*?OutputBin: "
+currentpagedevice /OutputType known
+{
+<<
+ (FaceDown) (FaceDown) 
+ (Stacker) (Stacker)
+ >>
+  currentpagedevice /OutputType get 
+  dup null eq  {pop pop (Unknown)} { get } ifelse
+ } {(Unknown)} ifelse = flush      
+"
+*End
+*CloseUI: *OutputBin
+
+
+*% *OpenUI *Jog/Output Jogging: PickOne
+*% *OrderDependency: 30.0 AnySetup *Jog
+*% *DefaultJog: None
+*% *Jog None/Off: "<</Jog 0>> setpagedevice"
+*% *Jog EndOfJob/On: "<</Jog 2>> setpagedevice"
+*% *?Jog: "
+*% << 0 (None) 1 (EndOfJob) 2 (EndOfJob) 3 (EndOfJob) >>
+*%   currentpagedevice /Jog get 
+*%   dup null eq {pop (Unknown)} { get } ifelse = flush"
+*% *End
+*% *CloseUI: *Jog
+
+
+*OpenUI *TraySwitch/Tray Switching: Boolean
+*OrderDependency: 30.0 AnySetup *TraySwitch
+*DefaultTraySwitch: True
+*TraySwitch True/On:  "<</TraySwitch true>> setpagedevice"
+*TraySwitch False/Off: "<</TraySwitch false>> setpagedevice"
+*?TraySwitch: "currentpagedevice /TraySwitch get {(True)} {(False)} ifelse = flush"
+*CloseUI: *TraySwitch
+
+*OpenUI *ExitJamRecovery/Jam Recovery: Boolean
+*OrderDependency: 40.0 AnySetup *ExitJamRecovery
+*DefaultExitJamRecovery: True
+*ExitJamRecovery True/On:  "<</ExitJamRecovery  true>> setpagedevice"
+*ExitJamRecovery False/Off: "<</ExitJamRecovery false>> setpagedevice"
+*?ExitJamRecovery: "currentpagedevice /ExitJamRecovery get {(True)} {(False)} ifelse = flush"
+*CloseUI: *ExitJamRecovery
+
+*OpenUI *Duplex/Duplex: PickOne
+*OrderDependency: 25.0 AnySetup *Duplex
+*DefaultDuplex: None
+*Duplex None/Off: "currentpagedevice /Duplex known { <</Duplex false /Tumble false>> setpagedevice } if"
+*Duplex DuplexNoTumble/Book Style: "currentpagedevice /Duplex known { <</Duplex true /Tumble false>> setpagedevice } if"
+*Duplex DuplexTumble/Calendar Style: "currentpagedevice /Duplex known { <</Duplex true /Tumble true>> setpagedevice } if"
+*?Duplex: "
+currentpagedevice dup /Duplex known 
+{dup /Duplex get 
+ {/Tumble get {(DuplexTumble)}  {(DuplexNoTumble)} ifelse}
+ {/Tumble get {(SimplexTumble)} {(None)}           ifelse}
+ ifelse 
+}
+{pop (None)} 
+ifelse = flush"
+*End
+*CloseUI: *Duplex
+
+*OpenUI *GNIgnoreDuplex/Ignore Duplex Errors: Boolean
+*OrderDependency: 24.0 AnySetup *GNIgnoreDuplex
+*DefaultGNIgnoreDuplex: False
+*GNIgnoreDuplex True/Yes: "
+ << /Policies
+ << /Duplex 1 currentpagedevice /Policies get {} forall >> 
+ >> setpagedevice"
+*End
+*GNIgnoreDuplex False/No: "
+ << /Policies
+ << /Duplex 0 currentpagedevice /Policies get {} forall >> 
+ >> setpagedevice"
+*End
+*?GNIgnoreDuplex: "
+    [(False) (True)]
+    currentpagedevice /Policies get /Duplex get get = flush
+"
+*End
+*CloseUI: *GNIgnoreDuplex
+
+*% ========== 5.18 Finishing Features =======================================================
+
+*CloseGroup: Output
+
+*% ========== 5.20 Font Related Keywords ====================================================
+
+*FCacheSize 64Meg/Standard: 5600000
+*FCacheSize 128Meg/128 MB RAM: 12000000
+*FCacheSize 192Meg/192 MB RAM: 18400000
+*FCacheSize 256Meg/256 MB RAM: 24800000
+
+*ADHasEuro: True
+
+*Font AlbertusMT: Standard "(001.001)" Standard ROM
+*Font AlbertusMT-Italic: Standard "(001.001)" Standard ROM
+*Font AlbertusMT-Light: Standard "(001.001)" Standard ROM
+*Font AntiqueOlive-Bold: Standard "(501.010)" ExtendedRoman ROM
+*Font AntiqueOliveCE-Bold: Win1250 "(501.010)" ExtendedRoman ROM
+*Font AntiqueOliveCE-Compact: Win1250 "(501.009)" ExtendedRoman ROM
+*Font AntiqueOliveCE-Italic: Win1250 "(501.011)" ExtendedRoman ROM
+*Font AntiqueOliveCE-Roman: Win1250 "(501.009)" ExtendedRoman ROM
+*Font AntiqueOlive-Compact: Standard "(501.009)" ExtendedRoman ROM
+*Font AntiqueOlive-Italic: Standard "(501.011)" ExtendedRoman ROM
+*Font AntiqueOlive-Roman: Standard "(501.009)" ExtendedRoman ROM
+*Font Apple-Chancery: Standard "(001.002)" ExtendedRoman ROM
+*Font Apple-ChanceryCE: Win1250 "(001.002)" ExtendedRoman ROM
+*Font Arial-BoldItalicMT: Standard "(501.010)" ExtendedRoman ROM
+*Font Arial-BoldMT: Standard "(501.010)" ExtendedRoman ROM
+*Font ArialCE: Win1250 "(501.010)" ExtendedRoman ROM
+*Font ArialCE-Bold: Win1250 "(501.010)" ExtendedRoman ROM
+*Font ArialCE-BoldItalic: Win1250 "(501.010)" ExtendedRoman ROM
+*Font ArialCE-Italic: Win1250 "(501.011)" ExtendedRoman ROM
+*Font Arial-ItalicMT: Standard "(501.011)" ExtendedRoman ROM
+*Font ArialMT: Standard "(501.010)" ExtendedRoman ROM 
+*Font AvantGarde-Book: Standard "(501.010)" ExtendedRoman ROM
+*Font AvantGarde-BookOblique: Standard "(501.010)" ExtendedRoman ROM
+*Font AvantGardeCE-Book: Win1250 "(501.010)" ExtendedRoman ROM
+*Font AvantGardeCE-BookOblique: Win1250 "(501.010)" ExtendedRoman ROM
+*Font AvantGardeCE-Demi: Win1250 "(501.011)" ExtendedRoman ROM
+*Font AvantGardeCE-DemiOblique: Win1250 "(501.011)" ExtendedRoman ROM
+*Font AvantGarde-Demi: Standard "(501.011)" ExtendedRoman ROM
+*Font AvantGarde-DemiOblique: Standard "(501.011)" ExtendedRoman ROM
+*Font Bodoni: Standard "(501.009)" ExtendedRoman ROM
+*Font Bodoni-Bold: Standard "(501.007)" ExtendedRoman ROM
+*Font Bodoni-BoldItalic: Standard "(501.008)" ExtendedRoman ROM
+*Font BodoniCE: Win1250 "(501.009)" ExtendedRoman ROM
+*Font BodoniCE-Bold: Win1250 "(501.007)" ExtendedRoman ROM
+*Font BodoniCE-BoldItalic: Win1250 "(501.008)" ExtendedRoman ROM
+*Font BodoniCE-Italic: Win1250 "(501.008)" ExtendedRoman ROM
+*Font BodoniCE-Poster: Win1250 "(501.010)" ExtendedRoman ROM
+*Font BodoniCE-PosterCompressed: Win1250 "(501.008)" ExtendedRoman ROM
+*Font Bodoni-Italic: Standard "(501.008)" ExtendedRoman ROM
+*Font Bodoni-Poster: Standard "(501.010)" ExtendedRoman ROM
+*Font Bodoni-PosterCompressed: Standard "(501.008)" ExtendedRoman ROM
+*Font BookmanCE-Demi: Win1250 "(501.008)" ExtendedRoman ROM
+*Font BookmanCE-DemiItalic: Win1250 "(501.009)" ExtendedRoman ROM
+*Font BookmanCE-Light: Win1250 "(501.007)" ExtendedRoman ROM
+*Font BookmanCE-LightItalic: Win1250 "(501.008)" ExtendedRoman ROM
+*Font Bookman-Demi: Standard "(501.008)" ExtendedRoman ROM
+*Font Bookman-DemiItalic: Standard "(501.009)" ExtendedRoman ROM
+*Font Bookman-Light: Standard "(501.007)" ExtendedRoman ROM
+*Font Bookman-LightItalic: Standard "(501.008)" ExtendedRoman ROM
+*Font Carta: Special "(001.001S)" Special ROM
+*Font Chicago: Standard "(501.013)" ExtendedRoman ROM
+*Font ChicagoCE: Win1250 "(501.013)" ExtendedRoman ROM
+*Font Clarendon: Standard "(501.010)" ExtendedRoman ROM
+*Font Clarendon-Bold: Standard "(501.009)" ExtendedRoman ROM
+*Font ClarendonCE: Win1250 "(501.010)" ExtendedRoman ROM
+*Font ClarendonCE-Bold: Win1250 "(501.009)" ExtendedRoman ROM
+*Font ClarendonCE-Light: Win1250 "(501.010)" ExtendedRoman ROM
+*Font Clarendon-Light: Standard "(501.010)" ExtendedRoman ROM
+*Font CooperBlack: Standard "(001.004)" Standard ROM
+*Font CooperBlack-Italic: Standard "(001.004)" Standard ROM
+*Font Copperplate-ThirtyThreeBC: Standard "(001.003)" Standard ROM
+*Font Copperplate-ThirtyTwoBC: Standard "(001.003)" Standard ROM
+*Font CoronetCE-Regular: Win1250 "(001.002)" Standard ROM
+*Font Coronet-Regular: Standard "(001.002)" Standard ROM
+*Font Courier: Standard "(501.011)" ExtendedRoman ROM
+*Font Courier-Bold: Standard "(501.011)" ExtendedRoman ROM
+*Font Courier-BoldOblique: Standard "(501.011)" ExtendedRoman ROM
+*Font CourierCE: Win1250 "(501.011)" ExtendedRoman ROM
+*Font CourierCE-Bold: Win1250 "(501.011)" ExtendedRoman ROM
+*Font CourierCE-BoldOblique: Win1250 "(501.011)" ExtendedRoman ROM
+*Font CourierCE-Oblique: Win1250 "(501.011)" ExtendedRoman ROM
+*Font Courier-Oblique: Standard "(501.011)" ExtendedRoman ROM
+*Font Eurostile: Standard "(501.009)" ExtendedRoman ROM
+*Font Eurostile-Bold: Standard "(501.009)" ExtendedRoman ROM
+*Font Eurostile-BoldExtendedTwo: Standard "(501.009)" ExtendedRoman ROM
+*Font EurostileCE: Win1250 "(501.009)" ExtendedRoman ROM
+*Font EurostileCE-Bold: Win1250 "(501.009)" ExtendedRoman ROM
+*Font EurostileCE-BoldExtendedTwo: Win1250 "(501.009)" ExtendedRoman ROM
+*Font EurostileCE-ExtendedTwo: Win1250 "(501.011)" ExtendedRoman ROM
+*Font Eurostile-ExtendedTwo: Standard "(501.011)" ExtendedRoman ROM
+*Font Geneva: Standard "(501.009)" ExtendedRoman ROM
+*Font GenevaCE: Win1250 "(501.009)" ExtendedRoman ROM
+*Font GillSans: Standard "(501.010)" ExtendedRoman ROM
+*Font GillSans-Bold: Standard "(501.008)" ExtendedRoman ROM
+*Font GillSans-BoldCondensed: Standard "(501.007)" ExtendedRoman ROM
+*Font GillSans-BoldItalic: Standard "(501.009)" ExtendedRoman ROM
+*Font GillSansCE-Bold: Win1250 "(501.008)" ExtendedRoman ROM
+*Font GillSansCE-BoldCondensed: Win1250 "(501.007)" ExtendedRoman ROM
+*Font GillSansCE-BoldItalic: Win1250 "(501.009)" ExtendedRoman ROM
+*Font GillSansCE-Condensed: Win1250 "(501.008)" ExtendedRoman ROM
+*Font GillSansCE-ExtraBold: Win1250 "(501.009)" ExtendedRoman ROM
+*Font GillSansCE-Italic: Win1250 "(501.009)" ExtendedRoman ROM
+*Font GillSansCE-Light: Win1250 "(501.010)" ExtendedRoman ROM
+*Font GillSansCE-LightItalic: Win1250 "(501.010)" ExtendedRoman ROM
+*Font GillSansCE-Roman: Win1250 "(501.010)" ExtendedRoman ROM
+*Font GillSans-Condensed: Standard "(501.008)" ExtendedRoman ROM
+*Font GillSans-ExtraBold: Standard "(501.009)" ExtendedRoman ROM
+*Font GillSans-Italic: Standard "(501.009)" ExtendedRoman ROM
+*Font GillSans-Light: Standard "(501.010)" ExtendedRoman ROM
+*Font GillSans-LightItalic: Standard "(501.010)" ExtendedRoman ROM
+*Font Goudy: Standard "(001.004)" Standard ROM
+*Font Goudy-Bold: Standard "(001.003)" Standard ROM
+*Font Goudy-BoldItalic: Standard "(001.003)" Standard ROM
+*Font Goudy-ExtraBold: Standard "(001.002)" Standard ROM
+*Font Goudy-Italic: Standard "(001.003)" Standard ROM
+*Font Helvetica: Standard "(501.009)" ExtendedRoman ROM
+*Font Helvetica-Bold: Standard "(501.011)" ExtendedRoman ROM
+*Font Helvetica-BoldOblique: Standard "(501.011)" ExtendedRoman ROM
+*Font HelveticaCE: Win1250 "(501.009)" ExtendedRoman ROM
+*Font HelveticaCE-Bold: Win1250 "(501.011)" ExtendedRoman ROM
+*Font HelveticaCE-BoldOblique: Win1250 "(501.011)" ExtendedRoman ROM
+*Font HelveticaCE-Cond: Win1250 "(501.011)" ExtendedRoman ROM
+*Font HelveticaCE-CondBold: Win1250 "(501.010)" ExtendedRoman ROM
+*Font HelveticaCE-CondBoldObl: Win1250 "(501.010)" ExtendedRoman ROM
+*Font HelveticaCE-CondObl: Win1250 "(501.011)" ExtendedRoman ROM
+*Font HelveticaCE-Narrow: Win1250 "(501.009)" ExtendedRoman ROM
+*Font HelveticaCE-NarrowBold: Win1250 "(501.011)" ExtendedRoman ROM
+*Font HelveticaCE-NarrowBoldOblique: Win1250 "(501.011)" ExtendedRoman ROM
+*Font HelveticaCE-NarrowOblique: Win1250 "(501.009)" ExtendedRoman ROM
+*Font HelveticaCE-Oblique: Win1250 "(501.009)" ExtendedRoman ROM
+*Font Helvetica-Condensed: Standard "(501.011)" ExtendedRoman ROM
+*Font Helvetica-Condensed-Bold: Standard "(501.010)" ExtendedRoman ROM
+*Font Helvetica-Condensed-BoldObl: Standard "(501.010)" ExtendedRoman ROM
+*Font Helvetica-Condensed-Oblique: Standard "(501.011)" ExtendedRoman ROM
+*Font Helvetica-Narrow: Standard "(501.009)" ExtendedRoman ROM
+*Font Helvetica-Narrow-Bold: Standard "(501.011)" ExtendedRoman ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(501.011)" ExtendedRoman ROM
+*Font Helvetica-Narrow-Oblique: Standard "(501.009)" ExtendedRoman ROM
+*Font Helvetica-Oblique: Standard "(501.009)" ExtendedRoman ROM
+*Font HoeflerText-Black: Standard "(501.010)" ExtendedRoman ROM
+*Font HoeflerText-BlackItalic: Standard "(501.011)" ExtendedRoman ROM
+*Font HoeflerTextCE-Black: Win1250 "(501.010)" ExtendedRoman ROM
+*Font HoeflerTextCE-BlackItalic: Win1250 "(501.011)" ExtendedRoman ROM
+*Font HoeflerTextCE-Italic: Win1250 "(501.013)" ExtendedRoman ROM
+*Font HoeflerTextCE-Regular: Win1250 "(501.011)" ExtendedRoman ROM
+*Font HoeflerText-Italic: Standard "(501.013)" ExtendedRoman ROM
+*Font HoeflerText-Ornaments: Special "(001.001)" Special ROM
+*Font HoeflerText-Regular: Standard "(501.011)" ExtendedRoman ROM
+*Font JoannaMT: Standard "(501.010)" ExtendedRoman ROM
+*Font JoannaMT-Bold: Standard "(501.009)" ExtendedRoman ROM
+*Font JoannaMT-BoldItalic: Standard "(501.009)" ExtendedRoman ROM
+*Font JoannaMTCE: Win1250 "(501.010)" ExtendedRoman ROM
+*Font JoannaMTCE-Bold: Win1250 "(501.009)" ExtendedRoman ROM
+*Font JoannaMTCE-BoldItalic: Win1250 "(501.009)" ExtendedRoman ROM
+*Font JoannaMTCE-Italic: Win1250 "(501.009)" ExtendedRoman ROM
+*Font JoannaMT-Italic: Standard "(501.009)" ExtendedRoman ROM
+*Font LetterGothic: Standard "(501.010)" ExtendedRoman ROM
+*Font LetterGothic-Bold: Standard "(501.011)" ExtendedRoman ROM
+*Font LetterGothic-BoldSlanted: Standard "(501.011)" ExtendedRoman ROM
+*Font LetterGothicCE: Win1250 "(501.010)" ExtendedRoman ROM
+*Font LetterGothicCE-Bold: Win1250 "(501.011)" ExtendedRoman ROM
+*Font LetterGothicCE-BoldSlanted: Win1250 "(501.011)" ExtendedRoman ROM
+*Font LetterGothicCE-Slanted: Win1250 "(501.011)" ExtendedRoman ROM
+*Font LetterGothic-Slanted: Standard "(501.011)" ExtendedRoman ROM
+*Font LubalinGraph-Book: Standard "(501.010)" ExtendedRoman ROM
+*Font LubalinGraph-BookOblique: Standard "(501.010)" ExtendedRoman ROM
+*Font LubalinGraphCE-Book: Win1250 "(501.010)" ExtendedRoman ROM
+*Font LubalinGraphCE-BookOblique: Win1250 "(501.010)" ExtendedRoman ROM
+*Font LubalinGraphCE-Demi: Win1250 "(501.010)" ExtendedRoman ROM
+*Font LubalinGraphCE-DemiOblique: Win1250 "(501.010)" ExtendedRoman ROM
+*Font LubalinGraph-Demi: Standard "(501.010)" ExtendedRoman ROM
+*Font LubalinGraph-DemiOblique: Standard "(501.010)" ExtendedRoman ROM
+*Font Marigold: Standard "(001.001)" Standard ROM
+*Font Monaco: Standard "(501.014)" ExtendedRoman ROM
+*Font MonacoCE: Win1250 "(501.014)" ExtendedRoman ROM
+*Font MonaLisa-Recut: Standard "(001.001)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(501.009)" ExtendedRoman ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(501.010)" ExtendedRoman ROM
+*Font NewCenturySchlbkCE-Bold: Win1250 "(501.009)" ExtendedRoman ROM
+*Font NewCenturySchlbkCE-BoldItalic: Win1250 "(501.010)" ExtendedRoman ROM
+*Font NewCenturySchlbkCE-Italic: Win1250 "(501.012)" ExtendedRoman ROM
+*Font NewCenturySchlbkCE-Roman: Win1250 "(501.009)" ExtendedRoman ROM
+*Font NewCenturySchlbk-Italic: Standard "(501.012)" ExtendedRoman ROM
+*Font NewCenturySchlbk-Roman: Standard "(501.009)" ExtendedRoman ROM
+*Font NewYork: Standard "(501.015)" ExtendedRoman ROM
+*Font NewYorkCE: Win1250 "(501.015)" ExtendedRoman ROM
+*Font Optima: Standard "(501.011)" ExtendedRoman ROM
+*Font Optima-Bold: Standard "(501.009)" ExtendedRoman ROM
+*Font Optima-BoldItalic: Standard "(501.010)" ExtendedRoman ROM
+*Font OptimaCE-Bold: Win1250 "(501.009)" ExtendedRoman ROM
+*Font OptimaCE-BoldItalic: Win1250 "(501.010)" ExtendedRoman ROM
+*Font OptimaCE-Italic: Win1250 "(501.011)" ExtendedRoman ROM
+*Font OptimaCE-Roman: Win1250 "(501.011)" ExtendedRoman ROM
+*Font Optima-Italic: Standard "(501.011)" ExtendedRoman ROM
+*Font Oxford: Standard "(001.001)" Standard ROM
+*Font Palatino-Bold: Standard "(501.009)" ExtendedRoman ROM
+*Font Palatino-BoldItalic: Standard "(501.008)" ExtendedRoman ROM
+*Font PalatinoCE-Bold: Win1250 "(501.009)" ExtendedRoman ROM
+*Font PalatinoCE-BoldItalic: Win1250 "(501.008)" ExtendedRoman ROM
+*Font PalatinoCE-Italic: Win1250 "(501.009)" ExtendedRoman ROM
+*Font PalatinoCE-Roman: Win1250 "(501.007)" ExtendedRoman ROM
+*Font Palatino-Italic: Standard "(501.009)" ExtendedRoman ROM
+*Font Palatino-Roman: Standard "(501.007)" ExtendedRoman ROM
+*Font StempelGaramond-Bold: Standard "(501.008)" ExtendedRoman ROM
+*Font StempelGaramond-BoldItalic: Standard "(501.013)" ExtendedRoman ROM
+*Font StempelGaramondCE-Bold: Win1250 "(501.008)" ExtendedRoman ROM
+*Font StempelGaramondCE-BoldItalic: Win1250 "(501.013)" ExtendedRoman ROM
+*Font StempelGaramondCE-Italic: Win1250 "(501.010)" ExtendedRoman ROM
+*Font StempelGaramondCE-Roman: Win1250 "(501.012)" ExtendedRoman ROM
+*Font StempelGaramond-Italic: Standard "(501.010)" ExtendedRoman ROM
+*Font StempelGaramond-Roman: Standard "(501.012)" ExtendedRoman ROM
+*Font Symbol: Special "(001.008S)" Special ROM
+*Font Tekton: Standard "(001.003S)" Standard ROM
+*Font Times-Bold: Standard "(501.010)" ExtendedRoman ROM
+*Font Times-BoldItalic: Standard "(501.010)" ExtendedRoman ROM
+*Font TimesCE-Bold: Win1250 "(501.010)" ExtendedRoman ROM
+*Font TimesCE-BoldItalic: Win1250 "(501.010)" ExtendedRoman ROM
+*Font TimesCE-Italic: Win1250 "(501.011)" ExtendedRoman ROM
+*Font TimesCE-Roman: Win1250 "(501.011)" ExtendedRoman ROM
+*Font Times-Italic: Standard "(501.011)" ExtendedRoman ROM
+*Font TimesNewRomanCE: Win1250 "(501.011)" ExtendedRoman ROM
+*Font TimesNewRomanCE-Bold: Win1250 "(501.010)" ExtendedRoman ROM
+*Font TimesNewRomanCE-BoldItalic: Win1250 "(501.012)" ExtendedRoman ROM
+*Font TimesNewRomanCE-Italic: Win1250 "(501.012)" ExtendedRoman ROM
+*Font TimesNewRomanPS-BoldItalicMT: Standard "(501.012)" ExtendedRoman ROM
+*Font TimesNewRomanPS-BoldMT: Standard "(501.010)" ExtendedRoman ROM
+*Font TimesNewRomanPS-ItalicMT: Standard "(501.012)" ExtendedRoman ROM
+*Font TimesNewRomanPSMT: Standard "(501.011)" ExtendedRoman ROM
+*Font Times-Roman: Standard "(501.011)" ExtendedRoman ROM
+*Font Univers: Standard "(501.010)" ExtendedRoman ROM
+*Font Univers-Bold: Standard "(501.009)" ExtendedRoman ROM
+*Font Univers-BoldExt: Standard "(501.011)" ExtendedRoman ROM
+*Font Univers-BoldExtObl: Standard "(501.011)" ExtendedRoman ROM
+*Font Univers-BoldOblique: Standard "(501.009)" ExtendedRoman ROM
+*Font UniversCE-Bold: Win1250 "(501.009)" ExtendedRoman ROM
+*Font UniversCE-BoldExt: Win1250 "(501.011)" ExtendedRoman ROM
+*Font UniversCE-BoldExtObl: Win1250 "(501.011)" ExtendedRoman ROM
+*Font UniversCE-BoldOblique: Win1250 "(501.009)" ExtendedRoman ROM
+*Font UniversCE-Condensed: Win1250 "(501.012)" ExtendedRoman ROM
+*Font UniversCE-CondensedBold: Win1250 "(501.010)" ExtendedRoman ROM
+*Font UniversCE-CondensedBoldOblique: Win1250 "(501.010)" ExtendedRoman ROM
+*Font UniversCE-CondensedOblique: Win1250 "(501.012)" ExtendedRoman ROM
+*Font UniversCE-Extended: Win1250 "(501.010)" ExtendedRoman ROM
+*Font UniversCE-ExtendedObl: Win1250 "(501.010)" ExtendedRoman ROM
+*Font UniversCE-Light: Win1250 "(501.010)" ExtendedRoman ROM
+*Font UniversCE-LightOblique: Win1250 "(501.010)" ExtendedRoman ROM
+*Font UniversCE-Medium: Win1250 "(501.010)" ExtendedRoman ROM
+*Font UniversCE-Oblique: Win1250 "(501.010)" ExtendedRoman ROM
+*Font Univers-Condensed: Standard "(501.012)" ExtendedRoman ROM
+*Font Univers-CondensedBold: Standard "(501.010)" ExtendedRoman ROM
+*Font Univers-CondensedBoldOblique: Standard "(501.010)" ExtendedRoman ROM
+*Font Univers-CondensedOblique: Standard "(501.012)" ExtendedRoman ROM
+*Font Univers-Extended: Standard "(501.010)" ExtendedRoman ROM
+*Font Univers-ExtendedObl: Standard "(501.010)" ExtendedRoman ROM
+*Font Univers-Light: Standard "(501.010)" ExtendedRoman ROM
+*Font Univers-LightOblique: Standard "(501.010)" ExtendedRoman ROM
+*Font Univers-Oblique: Standard "(501.010)" ExtendedRoman ROM
+*Font Wingdings-Regular: Special "(001.001)" Special ROM
+*Font ZapfChanceryCE-MediumItalic: Win1250 "(003.000)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(003.000)" Standard ROM
+*Font ZapfDingbats: Special "(002.000S)" Special ROM 
+*DefaultFont: Courier
+
+*?FontQuery: "
+ save
+   { count 1 gt
+      { exch dup 127 string cvs (/) print print (:) print
+        /Font resourcestatus {pop pop (Yes)} {(No)} ifelse =
+      } { exit } ifelse 
+   } bind loop
+   (*) = flush
+ restore"
+*End
+
+*?FontList: "
+save
+  (*) {cvn ==} 128 string /Font resourceforall
+  (*) = flush
+restore
+"
+*End
+
+*% ========== 5.21 Printer Messages =========================================================
+
+*% Printer Messages (verbatim from printer):
+*PrinterError: "Cover Open"
+*PrinterError: "Warming up"
+
+*% Status (format: %%[ status: <one of these> ] %%)
+*Status: "idle"
+*Status: "busy"
+*Status: "waiting"
+*Status: "printing"
+*Status: "warming up"
+*Status: "initializing"
+*Status: "holding"
+*Status: "PrinterError: Cover Open"
+*Status: "PrinterError: Warming up"
+
+*% Input Sources (format: %%[ status: <stat>; source: <one of these> ]%% )
+*Source: "Serial"
+*Source: "Parallel"
+*Source: "Network"
+*Source: "Network2"
+
+*% Other Messages
+*Message: "%%Flushing: rest of job (to end-of-file) will be ignored]%%"
+*Message: "%%[exitserver: permanent state may be changed]%%"
+*Message: "%%[StatusChange: initializing]%%"
+
+
+*% ========== 5.22 Color Separation Keywords ================================================
+
+*OpenUI *Separations/Make Color Separations: Boolean
+*OrderDependency: 10.0 AnySetup *Separations
+*DefaultSeparations: False
+*Separations True/Yes:  "<</Separations true>> setpagedevice"
+*Separations False/No: "<</Separations false>>setpagedevice"
+*?Separations: "currentpagedevice /Separations get {(True)} {(False)} ifelse = flush"
+*CloseUI: *Separations
+*DefaultGuaranteedMaxSeparations: 1
+
+*% Last modification date: 22 October 2001
+*% End of PPD file for GENICOM Intelliprint mL280+
