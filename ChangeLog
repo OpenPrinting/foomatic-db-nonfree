@@ -1,3 +1,24 @@
+2009-03-17  Dafydd Crosby <dcrosby@userful.com>
+
+	* db/source/PPD/Genicom/GN28PPM.PPD
+	  db/source/PPD/Genicom/GNLN2101.PPD
+	  db/source/PPD/Genicom/GNLN2801.PPD
+	  db/source/PPD/Genicom/GNLN4501.PPD
+	  db/source/PPD/Genicom/GNLNM401.PPD
+	  db/source/PPD/Genicom/GNML2101.PPD
+	  db/source/PPD/Genicom/GNML2801.PPD
+	  db/source/PPD/Genicom/GNML3201.PPD
+	  db/source/PPD/Genicom/GNML401+.PPD
+	  db/source/PPD/Genicom/GNML4011.PPD
+	  db/source/PPD/Genicom/GNML4501.PPD
+	  db/source/PPD/Genicom/gncl1601.ppd
+	  db/source/PPD/Genicom/gnml2111.ppd
+	  db/source/PPD/Genicom/gnml2601.ppd
+	  db/source/PPD/Genicom/gnml280+.ppd
+	  db/source/PPD/Genicom/gnml4021.ppd
+	  db/source/driver/Postscript-Genicom.xml: Added 16 Genicom Postscript
+	  drivers
+
 2009-01-12  Till Kamppeter <till.kamppeter@gmail.com>
 
 	* COPYING, README, USAGE, Makefile.in, acinclude.m4, configure.ac,
