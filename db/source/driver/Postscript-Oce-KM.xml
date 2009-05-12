@@ -24,6 +24,9 @@
       Manufacturer-supplied PPD files for Oce's PostScript printers
     </en>
   </shortdescription>
+  <packages>
+   <package scope="general">openprinting-ppds-postscript-oce-km</package>
+  </packages>
   <functionality>
     <maxresx></maxresx>
     <maxresy></maxresy>

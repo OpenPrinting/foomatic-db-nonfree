@@ -28,6 +28,9 @@
       Manufacturer-supplied PPD files for Dell's PostScript printers
     </en>
   </shortdescription>
+  <packages>
+   <package scope="general">openprinting-ppds-postscript-dell</package>
+  </packages>
   <functionality>
     <maxresx></maxresx>
     <maxresy></maxresy>

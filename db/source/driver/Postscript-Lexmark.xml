@@ -26,6 +26,9 @@
       Manufacturer-supplied PPD files for Lexmark's PostScript printers
     </en>
   </shortdescription>
+  <packages>
+   <package scope="general">openprinting-ppds-postscript-lexmark</package>
+  </packages>
   <functionality>
     <maxresx></maxresx>
     <maxresy></maxresy>

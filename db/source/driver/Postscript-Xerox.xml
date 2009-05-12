@@ -25,6 +25,9 @@
       Manufacturer-supplied PPD files for Xerox's PostScript printers
     </en>
   </shortdescription>
+  <packages>
+   <package scope="general">openprinting-ppds-postscript-xerox</package>
+  </packages>
   <functionality>
     <maxresx></maxresx>
     <maxresy></maxresy>

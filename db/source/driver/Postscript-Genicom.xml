@@ -28,6 +28,9 @@
       Manufacturer-supplied PPD files for Genicom's PostScript printers
     </en>
   </shortdescription>
+  <packages>
+   <package scope="general">openprinting-ppds-postscript-genicom</package>
+  </packages>
   <functionality>
     <maxresx></maxresx>
     <maxresy></maxresy>
