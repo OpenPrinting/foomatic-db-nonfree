@@ -1,3 +1,10 @@
+2009-07-29  Till Kamppeter <till.kamppeter@gmail.com>
+
+	* driver/Postscript-Dell.xml, driver/Postscript-Genicom.xml,
+	  driver/Postscript-Lexmark.xml, driver/Postscript-Oce-KM.xml,
+	  driver/Postscript-Xerox.xml: Removed redundant boolean tags
+	  "<freesoftware />" and "<nopatents />".
+
 2009-05-12  Till Kamppeter <till.kamppeter@gmail.com>
 
 	* driver/Postscript-Dell.xml, driver/Postscript-Genicom.xml,
