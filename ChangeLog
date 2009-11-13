@@ -1,3 +1,8 @@
+2009-11-13  Till Kamppeter <till.kamppeter@gmail.com>
+
+	* driver/Postscript-Lexmark.xml: Removed, the entry has moved to
+	  foomatic-db as Lexmark switches to free software PPD files now.
+
 2009-10-08  Till Kamppeter <till.kamppeter@gmail.com>
 
 	* driver/Postscript-Dell.xml, driver/Postscript-Genicom.xml,
