@@ -1,5 +1,5 @@
 dnl Process this file with autoconf to produce a configure script.
-AC_INIT(db/source/driver/Postscript-Lexmark.xml)
+AC_INIT(db/source/driver/Postscript-Xerox.xml)
 
 dnl If the user didn't specify the $sysconfdir on the command line, let it
 dnl be /etc, not /usr/local/etc or /usr/etc

@@ -1,5 +1,8 @@
 2009-11-13  Till Kamppeter <till.kamppeter@gmail.com>
 
+	* configure.ac: Changed init file to check presence of source
+	  tree to db/source/driver/Postscript-Xerox.xml.
+
 	* driver/Postscript-Lexmark.xml: Removed, the entry has moved to
 	  foomatic-db as Lexmark switches to free software PPD files now.
 
