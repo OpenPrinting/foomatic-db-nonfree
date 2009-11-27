@@ -1,9 +1,8 @@
-<driver id='driver/Postscript-Genicom'>
+<driver id="driver/Postscript-Genicom">
   <name>Postscript-Genicom</name>
   <url>http://www.tallygenicom.com/</url>
   <supplier>Genicom</supplier>
   <manufacturersupplied>Genicom</manufacturersupplied>
-  <!--not "thirdpartysupplied"-->
   <license>Only verbatim redistribution</license>
   <licensetext>
     <en>
@@ -19,31 +18,23 @@
     </en>
   </licensetext>
   <nonfreesoftware />
-  <!--not "patents"-->
-  <!--no "supportcontacts"-->
   <shortdescription>
     <en>
       Manufacturer-supplied PPD files for Genicom's PostScript printers
     </en>
   </shortdescription>
   <packages>
-   <package scope="general">openprinting-ppds-postscript-genicom</package>
+    <package scope="general">openprinting-ppds-postscript-genicom</package>
   </packages>
   <functionality>
-    <!--maxresx unknown-->
-    <!--maxresy unknown-->
     <color />
-    <!--not "monochrome"-->
     <text>100</text>
     <lineart>100</lineart>
     <graphics>100</graphics>
     <photo>100</photo>
-    <!--load rating unknown-->
-    <!--speed rating unknown-->
   </functionality>
   <execution>
-    <postscript/>
-    <prototype></prototype>
+    <postscript />
   </execution>
   <comments>
     <en>
@@ -63,12 +54,10 @@
 
       Note that these printers work, like all other PostScript
       printers, with &lt;a
-      href="show_driver.cgi?driver=Postscript"&gt;generic PostScript
+      href=&quot;show_driver.cgi?driver=Postscript&quot;&gt;generic PostScript
       PPD files&lt;/a&gt;, but then you will not get access to all the
       printer specific functionality.&lt;p&gt;
 
     </en>
   </comments>
-  <printers>
-  </printers>
 </driver>
