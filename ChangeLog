@@ -1,10 +1,12 @@
-2009-11-27  OpenPrinting Web Server <webmaster@openprinting.org>
+2009-11-27  Till Kamppeter <till.kamppeter@gmail.com>
 
 	* db/source/driver/Postscript-Dell.xml,
 	  db/source/driver/Postscript-Genicom.xml,
 	  db/source/driver/Postscript-Oce-KM.xml,
-	  db/source/driver/Postscript-Xerox.xml:
-	  Entries modified in the MySQL database.
+	  db/source/driver/Postscript-Xerox.xml: First export of all XML
+	  files from the MySQL database. Now all files are formatted as
+	  the export process formats them. This avoids noise in future
+	  commits representing changes done in the MySQL database.
 
 2009-11-13  Till Kamppeter <till.kamppeter@gmail.com>
 
