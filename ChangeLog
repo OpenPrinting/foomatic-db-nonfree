@@ -1,9 +1,23 @@
+2009-12-14  Till Kamppeter <till.kamppeter@gmail.com>
+
+	* PPD/Lexmark/PS/Lexmark-C510.ppd,
+	  PPD/Lexmark/PS/Lexmark-C520.ppd,
+	  PPD/Lexmark/PS/Lexmark-C522.ppd,
+	  PPD/Lexmark/PS/Lexmark-C524.ppd,
+	  PPD/Lexmark/PS/Lexmark-C750.ppd,
+	  PPD/Lexmark/PS/Lexmark-C752.ppd,
+	  PPD/Lexmark/PS/Lexmark-C910.ppd,
+	  PPD/Lexmark/PS/Lexmark-C912.ppd,
+	  PPD/Lexmark/PS/Lexmark-E350d.ppd,
+	  PPD/Lexmark/PS/Lexmark-E352dn.ppd: Removed, as Lexmark has
+	  uploaded updated PPDs with a free license to foomatic-db.
+
 2009-11-27  Till Kamppeter <till.kamppeter@gmail.com>
 
-	* db/source/driver/Postscript-Dell.xml,
-	  db/source/driver/Postscript-Genicom.xml,
-	  db/source/driver/Postscript-Oce-KM.xml,
-	  db/source/driver/Postscript-Xerox.xml: First export of all XML
+	* driver/Postscript-Dell.xml,
+	  driver/Postscript-Genicom.xml,
+	  driver/Postscript-Oce-KM.xml,
+	  driver/Postscript-Xerox.xml: First export of all XML
 	  files from the MySQL database. Now all files are formatted as
 	  the export process formats them. This avoids noise in future
 	  commits representing changes done in the MySQL database.
@@ -11,7 +25,7 @@
 2009-11-13  Till Kamppeter <till.kamppeter@gmail.com>
 
 	* configure.ac: Changed init file to check presence of source
-	  tree to db/source/driver/Postscript-Xerox.xml.
+	  tree to driver/Postscript-Xerox.xml.
 
 	* driver/Postscript-Lexmark.xml: Removed, the entry has moved to
 	  foomatic-db as Lexmark switches to free software PPD files now.
