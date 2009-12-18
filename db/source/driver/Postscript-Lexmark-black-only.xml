@@ -1,0 +1,65 @@
+<driver id="driver/Postscript-Lexmark-black-only">
+  <name>Postscript-Lexmark-black-only</name>
+  <url>http://www.lexmark.com/</url>
+  <supplier>Lexmark</supplier>
+  <manufacturersupplied>Lexmark</manufacturersupplied>
+  <license>Only verbatim redistribution</license>
+  <licensetext>
+    <en>
+
+Copyright (c) 2004-2005 Lexmark International Inc.  All Rights Reserved.
+Permission is granted for redistribution of this file as
+long as this copyright notice is intact and the content
+of the file is not altered in any way from its original form.
+
+    </en>
+  </licensetext>
+  <nonfreesoftware />
+  <shortdescription>
+    <en>
+      Manufacturer-supplied PPD files for Lexmark's black-only PostScript printers
+    </en>
+  </shortdescription>
+  <packages>
+    <package scope="general">openprinting-ppds-postscript-lexmark-black-only</package>
+  </packages>
+  <functionality>
+    <monochrome />
+    <text>100</text>
+    <lineart>100</lineart>
+    <graphics>100</graphics>
+    <photo>100</photo>
+  </functionality>
+  <execution>
+    <postscript />
+  </execution>
+  <comments>
+    <en>
+
+      Under this entry Lexmark's PPD files for their black-only
+      PostScript printers are hosted. For these printers there is an
+      extra driver entry as Lexmark did not support them any more at
+      the time when they started to publish their PPDs under a free
+      license.&lt;p&gt;
+
+      PostScript printers are supported natively in Linux and Unix
+      environments, so you only need the PPD file for your printer, no
+      driver executables, to get access to all printing
+      functionality. The PPD contains all information about properties
+      and user-settable options which are specific to the printer and
+      makes printing dialogs show these options and allow the user to
+      control all the printer's functionality.&lt;p&gt;
+
+      The PPDs only support the printing functionality of the
+      printers. To use extra functionality, like scanning and faxing
+      you will need additional drivers.&lt;p&gt;
+
+      Note that these printers work, like all other PostScript
+      printers, with &lt;a
+      href=&quot;show_driver.cgi?driver=Postscript&quot;&gt;generic PostScript
+      PPD files&lt;/a&gt;, but then you will not get access to all the
+      printer specific functionality.&lt;p&gt;
+
+    </en>
+  </comments>
+</driver>

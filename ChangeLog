@@ -1,3 +1,11 @@
+2009-12-18  Till Kamppeter <till.kamppeter@gmail.com>
+
+	* driver/Postscript-Lexmark-black-only.xml: Introduced non-free
+	  driver entry for two old PostScript PPDs from Lexmark which
+	  are not supported by Lexmark any more (and therefore not re-licensed
+	  to a free license). The printers are the black-only versions of the
+	  Lexmark C510 and C752.
+
 2009-12-14  Till Kamppeter <till.kamppeter@gmail.com>
 
 	* PPD/Lexmark/PS/Lexmark-C510.ppd,
