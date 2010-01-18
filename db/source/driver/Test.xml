@@ -1,0 +1,8 @@
+<driver id="driver/Test">
+  <name>Test</name>
+  <thirdpartysupplied />
+  <nonfreesoftware />
+  <execution>
+    <ghostscript />
+  </execution>
+</driver>
