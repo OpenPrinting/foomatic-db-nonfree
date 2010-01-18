@@ -1,17 +1,3 @@
-2010-01-18  OpenPrinting Web Server <webmaster@openprinting.org>
-
-	* db/source/driver/Test.xml:
-	  Entries removed from the MySQL database.
-
-2010-01-18  OpenPrinting Web Server <webmaster@openprinting.org>
-
-	* db/source/driver/Test.xml: TODO: Upload comment, submitted by till
-
-2010-01-18  OpenPrinting Web Server <webmaster@openprinting.org>
-
-	* db/source/PPD/Test/:
-	  New PPD files for driver "Test" added.
-
 2009-12-18  Till Kamppeter <till.kamppeter@gmail.com>
 
 	* driver/Postscript-Lexmark-black-only.xml: Introduced non-free
