@@ -1,3 +1,22 @@
+2010-06-10  Till Kamppeter <till.kamppeter@gmail.com>
+
+	* driver/epson-ep-302.xml, driver/epson-ep-702a.xml,
+	  driver/epson-ep-902a-series.xml, driver/epson-n10-nx127.xml,
+	  driver/epson-nx420.xml, driver/epson-px-402a.xml,
+	  driver/epson-px-502a.xml, driver/epson-px-602f.xml,
+	  driver/epson-stylus-nx110-series.xml,
+	  driver/epson-stylus-office-tx510fn-series.xml,
+	  driver/epson-stylus-office-tx610fw-series.xml,
+	  driver/epson-stylus-photo-px810fw-series.xml,
+	  driver/epson-stylus-photo-t50-series.xml,
+	  driver/epson-stylus-photo-tx650-series.xml,
+	  driver/epson-stylus-s21-series.xml,
+	  driver/epson-stylus-tx550w-series.xml,
+	  driver/epson-workforce-320-sx218.xml,
+	  driver/epson-workforce-525.xml: Driver entries added by
+	  Epson/Avasys for their first downloadable LSB-based driver
+	  packages.
+
 2009-12-18  Till Kamppeter <till.kamppeter@gmail.com>
 
 	* driver/Postscript-Lexmark-black-only.xml: Introduced non-free

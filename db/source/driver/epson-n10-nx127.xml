@@ -1,0 +1,97 @@
+<driver id="driver/epson-n10-nx127">
+  <name>epson-n10-nx127</name>
+  <url>http://avasys.jp/english/linux_e/</url>
+  <supplier>Seiko Epson Corporation</supplier>
+  <manufacturersupplied>Epson</manufacturersupplied>
+  <license>LGPL and SEIKO EPSON CORPORATION SOFTWARE LICENSE AGREEMENT</license>
+  <licensetext>
+    <en url="http://avasys.jp/eng/linux_driver/se_terms_2_en.txt" />
+    <ja url="http://avasys.jp/product/linux_driver/se_terms_2_ja.txt" />
+  </licensetext>
+  <nonfreesoftware />
+  <!-- not "patents" -->
+  <supportcontacts>
+    <supportcontact level="voluntary" url="http://avasys.jp/english/linux_e/contact/">AVASYS Corporation</supportcontact>
+    <!-- not level="commercial" -->
+  </supportcontacts>
+  <shortdescription>
+    <en>
+      Epson Inkjet Printer Driver for Linux
+    </en>
+  </shortdescription>
+  <packages>
+    <package scope="general">http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/i486/*n10-nx127*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/x86_64/*n10-nx127*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-i386/*n10-nx127*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-amd64/*n10-nx127*</package>
+  </packages>
+  <functionality>
+    <maxresx>5760</maxresx>
+    <maxresy>1440</maxresy>
+    <color />
+    <!-- not "monochrome" -->
+    <text>100</text>
+    <lineart>100</lineart>
+    <graphics>100</graphics>
+    <photo>100</photo>
+  </functionality>
+  <execution>
+    <cups />
+  </execution>
+  <comments>
+    <en>
+      This software is a filter program used with the Common UNIX Printing
+      System (CUPS) under Linux. It supplies high quality printing
+      with Seiko Epson Color Ink Jet Printers. &lt;p&gt;
+
+      For a list of printers supported by this package, please refer to the &lt;a href=&quot;http://avasys.jp/english/linux_e/&quot;&gt;Avasys web site&lt;/a&gt;: &lt;p&gt;
+    </en>
+  </comments>
+  <printers>
+    <printer>
+      <id>printer/Epson-N10_N11_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-T22_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-T25_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-S22_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-T12_T22_N11_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-ME_32_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-ME_33_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-T13_T22E_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-NX125_NX127_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-TX120_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-TX125_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-SX125_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-TX120_NX120_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-TX121_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-ME_320_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-ME_330_Series</id>
+    </printer>
+  </printers>
+</driver>
