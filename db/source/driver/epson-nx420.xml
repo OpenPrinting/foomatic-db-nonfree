@@ -6,11 +6,13 @@
   <license>LGPL and SEIKO EPSON CORPORATION SOFTWARE LICENSE AGREEMENT</license>
   <licensetext>
     <en url="http://avasys.jp/eng/linux_driver/se_terms_2_en.txt" />
-    <ja>http://avasys.jp/product/linux_driver/se_terms_2_ja.txt</ja>
+    <ja url="http://avasys.jp/product/linux_driver/se_terms_2_ja.txt" />
   </licensetext>
   <nonfreesoftware />
+  <!-- not "patents" -->
   <supportcontacts>
-    <supportcontact url="http://avasys.jp/english/linux_e/contact/" level="voluntary">AVASYS Corporation</supportcontact>
+    <supportcontact level="voluntary" url="http://avasys.jp/english/linux_e/contact/">AVASYS Corporation</supportcontact>
+    <!-- not level="commercial" -->
   </supportcontacts>
   <shortdescription>
     <en>
@@ -24,6 +26,7 @@
     <maxresx>5760</maxresx>
     <maxresy>1440</maxresy>
     <color />
+    <!-- not "monochrome" -->
     <text>100</text>
     <lineart>100</lineart>
     <graphics>100</graphics>
@@ -43,19 +46,19 @@
   </comments>
   <printers>
     <printer>
-      <id>printer/Epson-ME_560W_Series</id>
-    </printer>
-    <printer>
       <id>printer/Epson-NX420_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-SX420W_Series</id>
     </printer>
     <printer>
       <id>printer/Epson-TX420W_Series</id>
     </printer>
     <printer>
+      <id>printer/Epson-SX420W_Series</id>
+    </printer>
+    <printer>
       <id>printer/Epson-TX420_NX420_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-ME_560W_Series</id>
     </printer>
   </printers>
 </driver>

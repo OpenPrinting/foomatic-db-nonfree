@@ -1,3 +1,22 @@
+2010-06-11  Till Kamppeter <till.kamppeter@gmail.com>
+
+	* driver/epson-ep-702a.xml,
+	  driver/epson-stylus-photo-tx650-series.xml: Re-added driver XML files
+	  corrected by Epson.
+
+	* driver/epson-ep-302.xml, driver/epson-ep-902a-series.xml,
+	  driver/epson-n10-nx127.xml, driver/epson-nx420.xml,
+	  driver/epson-px-402a.xml, driver/epson-px-502a.xml,
+	  driver/epson-px-602f.xml, driver/epson-stylus-nx110-series.xml,
+	  driver/epson-stylus-office-tx510fn-series.xml,
+	  driver/epson-stylus-office-tx610fw-series.xml,
+	  driver/epson-stylus-photo-px810fw-series.xml,
+	  driver/epson-stylus-photo-t50-series.xml,
+	  driver/epson-stylus-s21-series.xml,
+	  driver/epson-stylus-tx550w-series.xml,
+	  driver/epson-workforce-320-sx218.xml,
+	  driver/epson-workforce-525.xml: Corrections from Epson.
+
 2010-06-11  OpenPrinting Web Server <webmaster@openprinting.org>
 
 	* db/source/driver/epson-ep-302.xml,
