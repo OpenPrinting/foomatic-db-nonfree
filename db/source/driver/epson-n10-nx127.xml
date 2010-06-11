@@ -6,13 +6,11 @@
   <license>LGPL and SEIKO EPSON CORPORATION SOFTWARE LICENSE AGREEMENT</license>
   <licensetext>
     <en url="http://avasys.jp/eng/linux_driver/se_terms_2_en.txt" />
-    <ja url="http://avasys.jp/product/linux_driver/se_terms_2_ja.txt" />
+    <ja>http://avasys.jp/product/linux_driver/se_terms_2_ja.txt</ja>
   </licensetext>
   <nonfreesoftware />
-  <!-- not "patents" -->
   <supportcontacts>
-    <supportcontact level="voluntary" url="http://avasys.jp/english/linux_e/contact/">AVASYS Corporation</supportcontact>
-    <!-- not level="commercial" -->
+    <supportcontact url="http://avasys.jp/english/linux_e/contact/" level="voluntary">AVASYS Corporation</supportcontact>
   </supportcontacts>
   <shortdescription>
     <en>
@@ -26,7 +24,6 @@
     <maxresx>5760</maxresx>
     <maxresy>1440</maxresy>
     <color />
-    <!-- not "monochrome" -->
     <text>100</text>
     <lineart>100</lineart>
     <graphics>100</graphics>
@@ -46,7 +43,34 @@
   </comments>
   <printers>
     <printer>
+      <id>printer/Epson-ME_320_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-ME_32_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-ME_330_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-ME_33_Series</id>
+    </printer>
+    <printer>
       <id>printer/Epson-N10_N11_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-NX125_NX127_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-S22_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-SX125_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-T12_T22_N11_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-T13_T22E_Series</id>
     </printer>
     <printer>
       <id>printer/Epson-T22_Series</id>
@@ -55,43 +79,16 @@
       <id>printer/Epson-T25_Series</id>
     </printer>
     <printer>
-      <id>printer/Epson-S22_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-T12_T22_N11_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-ME_32_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-ME_33_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-T13_T22E_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-NX125_NX127_Series</id>
+      <id>printer/Epson-TX120_NX120_Series</id>
     </printer>
     <printer>
       <id>printer/Epson-TX120_Series</id>
     </printer>
     <printer>
-      <id>printer/Epson-TX125_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-SX125_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-TX120_NX120_Series</id>
-    </printer>
-    <printer>
       <id>printer/Epson-TX121_Series</id>
     </printer>
     <printer>
-      <id>printer/Epson-ME_320_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-ME_330_Series</id>
+      <id>printer/Epson-TX125_Series</id>
     </printer>
   </printers>
 </driver>

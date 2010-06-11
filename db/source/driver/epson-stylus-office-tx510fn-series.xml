@@ -6,13 +6,11 @@
   <license>LGPL and SEIKO EPSON CORPORATION SOFTWARE LICENSE AGREEMENT</license>
   <licensetext>
     <en url="http://avasys.jp/eng/linux_driver/se_terms_2_en.txt" />
-    <ja url="http://avasys.jp/product/linux_driver/se_terms_2_ja.txt" />
+    <ja>http://avasys.jp/product/linux_driver/se_terms_2_ja.txt</ja>
   </licensetext>
   <nonfreesoftware />
-  <!-- not "patents" -->
   <supportcontacts>
-    <supportcontact level="voluntary" url="http://avasys.jp/english/linux_e/contact/">AVASYS Corporation</supportcontact>
-    <!-- not level="commercial" -->
+    <supportcontact url="http://avasys.jp/english/linux_e/contact/" level="voluntary">AVASYS Corporation</supportcontact>
   </supportcontacts>
   <shortdescription>
     <en>
@@ -26,7 +24,6 @@
     <maxresx>5760</maxresx>
     <maxresy>1440</maxresy>
     <color />
-    <!-- not "monochrome" -->
     <text>100</text>
     <lineart>100</lineart>
     <graphics>100</graphics>
@@ -46,19 +43,19 @@
   </comments>
   <printers>
     <printer>
-      <id>printer/Epson-Stylus_Office_TX510FN</id>
+      <id>printer/Epson-ME_OFFICE_650FN</id>
     </printer>
     <printer>
       <id>printer/Epson-Stylus_Office_BX310FN</id>
     </printer>
     <printer>
-      <id>printer/Epson-ME_OFFICE_650FN</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-WorkForce_310</id>
+      <id>printer/Epson-Stylus_Office_TX510FN</id>
     </printer>
     <printer>
       <id>printer/Epson-Stylus_Office_TX515FN</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-WorkForce_310</id>
     </printer>
   </printers>
 </driver>

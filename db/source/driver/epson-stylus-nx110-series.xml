@@ -6,13 +6,11 @@
   <license>LGPL and SEIKO EPSON CORPORATION SOFTWARE LICENSE AGREEMENT</license>
   <licensetext>
     <en url="http://avasys.jp/eng/linux_driver/se_terms_2_en.txt" />
-    <ja url="http://avasys.jp/product/linux_driver/se_terms_2_ja.txt" />
+    <ja>http://avasys.jp/product/linux_driver/se_terms_2_ja.txt</ja>
   </licensetext>
   <nonfreesoftware />
-  <!-- not "patents" -->
   <supportcontacts>
-    <supportcontact level="voluntary" url="http://avasys.jp/english/linux_e/contact/">AVASYS Corporation</supportcontact>
-    <!-- not level="commercial" -->
+    <supportcontact url="http://avasys.jp/english/linux_e/contact/" level="voluntary">AVASYS Corporation</supportcontact>
   </supportcontacts>
   <shortdescription>
     <en>
@@ -26,7 +24,6 @@
     <maxresx>5760</maxresx>
     <maxresy>1440</maxresy>
     <color />
-    <!-- not "monochrome" -->
     <text>100</text>
     <lineart>100</lineart>
     <graphics>100</graphics>
@@ -52,16 +49,13 @@
       <id>printer/Epson-Stylus_NX115</id>
     </printer>
     <printer>
-      <id>printer/Epson-Stylus_TX110</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-Stylus_TX115</id>
-    </printer>
-    <printer>
       <id>printer/Epson-Stylus_SX110</id>
     </printer>
     <printer>
       <id>printer/Epson-Stylus_SX115</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-Stylus_TX110</id>
     </printer>
     <printer>
       <id>printer/Epson-Stylus_TX111</id>
@@ -71,6 +65,9 @@
     </printer>
     <printer>
       <id>printer/Epson-Stylus_TX113</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-Stylus_TX115</id>
     </printer>
     <printer>
       <id>printer/Epson-Stylus_TX117</id>
