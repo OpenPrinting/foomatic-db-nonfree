@@ -1,3 +1,25 @@
+2010-06-11  OpenPrinting Web Server <webmaster@openprinting.org>
+
+	* db/source/driver/epson-ep-302.xml,
+	  db/source/driver/epson-ep-702a.xml,
+	  db/source/driver/epson-ep-902a-series.xml,
+	  db/source/driver/epson-n10-nx127.xml,
+	  db/source/driver/epson-nx420.xml,
+	  db/source/driver/epson-px-402a.xml,
+	  db/source/driver/epson-px-502a.xml,
+	  db/source/driver/epson-px-602f.xml,
+	  db/source/driver/epson-stylus-nx110-series.xml,
+	  db/source/driver/epson-stylus-office-tx510fn-series.xml,
+	  db/source/driver/epson-stylus-office-tx610fw-series.xml,
+	  db/source/driver/epson-stylus-photo-px810fw-series.xml,
+	  db/source/driver/epson-stylus-photo-t50-series.xml,
+	  db/source/driver/epson-stylus-photo-tx650-series.xml,
+	  db/source/driver/epson-stylus-s21-series.xml,
+	  db/source/driver/epson-stylus-tx550w-series.xml,
+	  db/source/driver/epson-workforce-320-sx218.xml,
+	  db/source/driver/epson-workforce-525.xml:
+	  Entries modified in the MySQL database.
+
 2010-06-11  Till Kamppeter <till.kamppeter@gmail.com>
 
 	* driver/epson-ep-702a.xml,

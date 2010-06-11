@@ -9,10 +9,8 @@
     <ja url="http://avasys.jp/product/linux_driver/se_terms_2_ja.txt" />
   </licensetext>
   <nonfreesoftware />
-  <!-- not "patents" -->
   <supportcontacts>
-    <supportcontact level="voluntary" url="http://avasys.jp/linux/contact/">AVASYS Corporation</supportcontact>
-    <!-- not level="commercial" -->
+    <supportcontact url="http://avasys.jp/linux/contact/" level="voluntary">AVASYS Corporation</supportcontact>
   </supportcontacts>
   <shortdescription>
     <en>
@@ -26,7 +24,6 @@
     <maxresx>5760</maxresx>
     <maxresy>1440</maxresy>
     <color />
-    <!-- not "monochrome" -->
     <text>100</text>
     <lineart>100</lineart>
     <graphics>100</graphics>
