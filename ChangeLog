@@ -1,3 +1,9 @@
+2010-06-18  Till Kamppeter <till.kamppeter@gmail.com>
+
+	* driver/epson-n10-nx127.xml, driver/epson-workforce-320-sx218.xml,
+          driver/epson-workforce-525.xml: Removed printers which are not yet
+	  released onm Epson's request.
+
 2010-06-11  OpenPrinting Web Server <webmaster@openprinting.org>
 
 	* db/source/driver/epson-ep-302.xml,

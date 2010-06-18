@@ -46,9 +46,6 @@
       <id>printer/Epson-BX320FW_Series</id>
     </printer>
     <printer>
-      <id>printer/Epson-TX525FW_Series</id>
-    </printer>
-    <printer>
       <id>printer/Epson-WorkForce_520_Series</id>
     </printer>
   </printers>

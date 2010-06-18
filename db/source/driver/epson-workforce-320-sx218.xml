@@ -49,9 +49,6 @@
       <id>printer/Epson-ME_520_Series</id>
     </printer>
     <printer>
-      <id>printer/Epson-ME_620F_Series</id>
-    </printer>
-    <printer>
       <id>printer/Epson-SX218_Series</id>
     </printer>
     <printer>
@@ -59,15 +56,6 @@
     </printer>
     <printer>
       <id>printer/Epson-TX220_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-TX320F_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-TX320_WorkForce320_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-WorkForce_320_Series</id>
     </printer>
   </printers>
 </driver>
