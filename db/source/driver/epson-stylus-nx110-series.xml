@@ -18,7 +18,7 @@
     </en>
   </shortdescription>
   <packages>
-    <package scope="general">http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/i486/*stylus-nx110-series*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/x86_64/*stylus-nx110-series*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-i386/*stylus-nx110-series*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-amd64/*stylus-nx110-series*</package>
+    <package scope="general" fingerprint="https://linux.avasys.jp/drivers/lsb/epson-inkjet/key/fingerprint">http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/i486/*stylus-nx110-series*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/x86_64/*stylus-nx110-series*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-i386/*stylus-nx110-series*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-amd64/*stylus-nx110-series*</package>
   </packages>
   <functionality>
     <maxresx>5760</maxresx>

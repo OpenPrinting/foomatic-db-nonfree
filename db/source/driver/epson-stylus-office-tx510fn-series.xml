@@ -18,7 +18,7 @@
     </en>
   </shortdescription>
   <packages>
-    <package scope="general">http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/i486/*stylus-office-tx510fn-series*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/x86_64/*stylus-office-tx510fn-series*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-i386/*stylus-office-tx510fn-series*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-amd64/*stylus-office-tx510fn-series*</package>
+    <package scope="general" fingerprint="https://linux.avasys.jp/drivers/lsb/epson-inkjet/key/fingerprint">http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/i486/*stylus-office-tx510fn-series*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/x86_64/*stylus-office-tx510fn-series*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-i386/*stylus-office-tx510fn-series*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-amd64/*stylus-office-tx510fn-series*</package>
   </packages>
   <functionality>
     <maxresx>5760</maxresx>

@@ -18,7 +18,7 @@
     </en>
   </shortdescription>
   <packages>
-    <package scope="general">http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/i486/*ep-702a*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/x86_64/*ep-702a*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-i386/*ep-702a*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-amd64/*ep-702a*</package>
+    <package scope="general" fingerprint="https://linux.avasys.jp/drivers/lsb/epson-inkjet/key/fingerprint">http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/i486/*ep-702a*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/x86_64/*ep-702a*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-i386/*ep-702a*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-amd64/*ep-702a*</package>
   </packages>
   <functionality>
     <maxresx>5760</maxresx>
