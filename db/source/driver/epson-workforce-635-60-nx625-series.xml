@@ -1,5 +1,5 @@
-<driver id="driver/epson-workforce-320-sx218">
-  <name>epson-workforce-320-sx218</name>
+<driver id="driver/epson-workforce-635-60-nx625-series">
+  <name>epson-workforce-635-60-nx625-series</name>
   <url>http://avasys.jp/english/linux_e/</url>
   <supplier>Seiko Epson Corporation</supplier>
   <manufacturersupplied>Epson</manufacturersupplied>
@@ -18,7 +18,7 @@
     </en>
   </shortdescription>
   <packages>
-    <package scope="general" fingerprint="https://linux.avasys.jp/drivers/lsb/epson-inkjet/key/fingerprint">http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/i486/*workforce-320-sx218*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/x86_64/*workforce-320-sx218*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-i386/*workforce-320-sx218*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-amd64/*workforce-320-sx218*</package>
+    <package scope="general" fingerprint="https://linux.avasys.jp/drivers/lsb/epson-inkjet/key/fingerprint">http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/i486/*epson-workforce-635-60-nx625-series*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/x86_64/*epson-workforce-635-60-nx625-series*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-i386/*epson-workforce-635-60-nx625-series*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-amd64/*epson-workforce-635-60-nx625-series*</package>
   </packages>
   <functionality>
     <maxresx>5760</maxresx>
@@ -43,31 +43,52 @@
   </comments>
   <printers>
     <printer>
-      <id>printer/Epson-BX305_Series</id>
+      <id>printer/Epson-BX525WD_Series</id>
     </printer>
     <printer>
-      <id>printer/Epson-ME_520_Series</id>
+      <id>printer/Epson-BX620FWD_Series</id>
     </printer>
     <printer>
-      <id>printer/Epson-SX218_Series</id>
+      <id>printer/Epson-ME_900WD_Series</id>
     </printer>
     <printer>
-      <id>printer/Epson-TX220_NX220_Series</id>
+      <id>printer/Epson-ME_960FWD_Series</id>
     </printer>
     <printer>
-      <id>printer/Epson-TX220_Series</id>
+      <id>printer/Epson-NX620_Series</id>
     </printer>
     <printer>
-      <id>printer/Epson-WorkForce_320_Series</id>
+      <id>printer/Epson-SX525WD_Series</id>
     </printer>
     <printer>
-      <id>printer/Epson-TX320F_Series</id>
+      <id>printer/Epson-SX620FW_Series</id>
     </printer>
     <printer>
-      <id>printer/Epson-TX320_WorkForce320_Series</id>
+      <id>printer/Epson-TX560WD_Series</id>
     </printer>
     <printer>
-      <id>printer/Epson-ME_620F_Series</id>
+      <id>printer/Epson-TX620FWD_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-WorkForce_620_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-WorkForce_630_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-WorkForce_60_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-T42WD_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-B42WD_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-ME_82WD_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-ME_85ND_Series</id>
     </printer>
   </printers>
 </driver>
