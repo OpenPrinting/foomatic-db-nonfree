@@ -87,5 +87,8 @@
     <printer>
       <id>printer/Epson-TX125_Series</id>
     </printer>
+    <printer>
+      <id>printer/Epson-N10_N11_Series</id>
+    </printer>
   </printers>
 </driver>

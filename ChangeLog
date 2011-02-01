@@ -1,3 +1,9 @@
+2011-02-01  Seiko Epson Corporation <linux-epson-inkjet@avasys.jp>
+	* db/source/driver/epson-n10-nx127.xml,
+	  db/source/driver/epson-workforce-320-sx218.xml,
+	  db/source/driver/epson-workforce-525.xml:
+	  Entries modified in the MySQL database.	
+
 2010-07-06  OpenPrinting Web Server <webmaster@openprinting.org>
 
 	* db/source/driver/epson-ep-302.xml,
