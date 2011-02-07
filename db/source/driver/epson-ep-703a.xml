@@ -1,5 +1,5 @@
-<driver id="driver/epson-workforce-320-sx218">
-  <name>epson-workforce-320-sx218</name>
+<driver id="driver/epson-ep-703a">
+  <name>epson-ep-703a</name>
   <url>http://avasys.jp/english/linux_e/</url>
   <supplier>Seiko Epson Corporation</supplier>
   <manufacturersupplied>Epson</manufacturersupplied>
@@ -18,7 +18,7 @@
     </en>
   </shortdescription>
   <packages>
-    <package scope="general" fingerprint="https://linux.avasys.jp/drivers/lsb/epson-inkjet/key/fingerprint">http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/i486/*workforce-320-sx218*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/x86_64/*workforce-320-sx218*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-i386/*workforce-320-sx218*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-amd64/*workforce-320-sx218*</package>
+    <package scope="general" fingerprint="https://linux.avasys.jp/drivers/lsb/epson-inkjet/key/fingerprint">http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/i486/*epson-ep-703a*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/x86_64/*epson-ep-703a*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-i386/*epson-ep-703a*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-amd64/*epson-ep-703a*</package>
   </packages>
   <functionality>
     <maxresx>5760</maxresx>
@@ -43,31 +43,7 @@
   </comments>
   <printers>
     <printer>
-      <id>printer/Epson-BX305_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-ME_520_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-SX218_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-TX220_NX220_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-TX220_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-WorkForce_320_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-TX320F_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-TX320_WorkForce320_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-ME_620F_Series</id>
+      <id>printer/Epson-EP_703A</id>
     </printer>
   </printers>
 </driver>
