@@ -1,3 +1,13 @@
+2011-03-30  Seiko Epson Corporation <linux-epson-inkjet@avasys.jp>
+	* db/source/driver/epson-201103j.xml,
+	  db/source/driver/epson-k100-k200-series.xml,
+	  db/source/driver/epson-px-5v.xml,
+	  db/source/driver/epson-px-673f.xml,
+	  db/source/driver/epson-px-k100.xml,
+	  db/source/driver/epson-stylus-photo-r3000.xml,
+	  db/source/driver/epson-workforce-840.xml:
+	  Entries added in the MySQL database.	
+	  
 2011-02-01  Seiko Epson Corporation <linux-epson-inkjet@avasys.jp>
 	* db/source/driver/epson-artisan-725-835-series.xml,
 	  db/source/driver/epson-ep-703a.xml,
