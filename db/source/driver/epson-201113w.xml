@@ -1,5 +1,5 @@
-<driver id="driver/epson-n10-nx127">
-  <name>epson-n10-nx127</name>
+<driver id="driver/epson-201113w">
+  <name>epson-201113w</name>
   <url>http://avasys.jp/english/linux_e/</url>
   <supplier>Seiko Epson Corporation</supplier>
   <manufacturersupplied>Epson</manufacturersupplied>
@@ -18,7 +18,7 @@
     </en>
   </shortdescription>
   <packages>
-    <package scope="general" fingerprint="https://linux.avasys.jp/drivers/lsb/epson-inkjet/key/fingerprint">http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/i486/*n10-nx127*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/x86_64/*n10-nx127*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-i386/*n10-nx127*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-amd64/*n10-nx127*</package>
+    <package scope="general" fingerprint="https://linux.avasys.jp/drivers/lsb/epson-inkjet/key/fingerprint">http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/i486/*201113w*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/x86_64/*201113w*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-i386/*201113w*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-amd64/*201113w*</package>
   </packages>
   <functionality>
     <maxresx>5760</maxresx>
@@ -43,55 +43,55 @@
   </comments>
   <printers>
     <printer>
-      <id>printer/Epson-ME_320_Series</id>
+      <id>printer/Epson-WP-4010</id>
     </printer>
     <printer>
-      <id>printer/Epson-ME_32_Series</id>
+      <id>printer/Epson-WP-4011</id>
     </printer>
     <printer>
-      <id>printer/Epson-ME_330_Series</id>
+      <id>printer/Epson-WP-4015</id>
     </printer>
     <printer>
-      <id>printer/Epson-ME_33_Series</id>
+      <id>printer/Epson-WP-4020</id>
     </printer>
     <printer>
-      <id>printer/Epson-ME_10_Series</id>
+      <id>printer/Epson-WP-4023</id>
     </printer>
     <printer>
-      <id>printer/Epson-NX125_NX127_Series</id>
+      <id>printer/Epson-WP-4025</id>
     </printer>
     <printer>
-      <id>printer/Epson-S22_Series</id>
+      <id>printer/Epson-WP-4511</id>
     </printer>
     <printer>
-      <id>printer/Epson-SX125_Series</id>
+      <id>printer/Epson-WP-4515</id>
     </printer>
     <printer>
-      <id>printer/Epson-T12_T22_N11_Series</id>
+      <id>printer/Epson-WP-4520</id>
     </printer>
     <printer>
-      <id>printer/Epson-T13_T22E_Series</id>
+      <id>printer/Epson-WP-4521</id>
     </printer>
     <printer>
-      <id>printer/Epson-T22_Series</id>
+      <id>printer/Epson-WP-4525</id>
     </printer>
     <printer>
-      <id>printer/Epson-T25_Series</id>
+      <id>printer/Epson-WP-4530</id>
     </printer>
     <printer>
-      <id>printer/Epson-TX120_NX120_Series</id>
+      <id>printer/Epson-WP-4531</id>
     </printer>
     <printer>
-      <id>printer/Epson-TX120_Series</id>
+      <id>printer/Epson-WP-4533</id>
     </printer>
     <printer>
-      <id>printer/Epson-TX121_Series</id>
+      <id>printer/Epson-WP-4535</id>
     </printer>
     <printer>
-      <id>printer/Epson-TX125_Series</id>
+      <id>printer/Epson-WP-4540</id>
     </printer>
     <printer>
-      <id>printer/Epson-N10_N11_Series</id>
+      <id>printer/Epson-WP-4545</id>
     </printer>
   </printers>
 </driver>

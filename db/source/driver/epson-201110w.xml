@@ -1,6 +1,6 @@
-<driver id="driver/epson-201103j">
-  <name>epson-201103j</name>
-  <url>http://avasys.jp/linux/</url>
+<driver id="driver/epson-201110w">
+  <name>epson-201110w</name>
+  <url>http://avasys.jp/english/linux_e/</url>
   <supplier>Seiko Epson Corporation</supplier>
   <manufacturersupplied>Epson</manufacturersupplied>
   <license>LGPL and SEIKO EPSON CORPORATION SOFTWARE LICENSE AGREEMENT</license>
@@ -10,7 +10,7 @@
   </licensetext>
   <nonfreesoftware />
   <supportcontacts>
-    <supportcontact url="http://avasys.jp/linux/contact/" level="voluntary">AVASYS Corporation</supportcontact>
+    <supportcontact url="http://avasys.jp/english/linux_e/contact/" level="voluntary">AVASYS Corporation</supportcontact>
   </supportcontacts>
   <shortdescription>
     <en>
@@ -18,7 +18,7 @@
     </en>
   </shortdescription>
   <packages>
-    <package scope="general" fingerprint="https://linux.avasys.jp/drivers/lsb/epson-inkjet/key/fingerprint">http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/i486/*201103j*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/x86_64/*201103j*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-i386/*201103j*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-amd64/*201103j*</package>
+    <package scope="general" fingerprint="https://linux.avasys.jp/drivers/lsb/epson-inkjet/key/fingerprint">http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/i486/*201110w*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/x86_64/*201110w*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-i386/*201110w*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-amd64/*201110w*</package>
   </packages>
   <functionality>
     <maxresx>5760</maxresx>
@@ -43,7 +43,13 @@
   </comments>
   <printers>
     <printer>
-      <id>printer/Epson-PX_403A</id>
+      <id>printer/Epson-WF-7510</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-WF-7511</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-WF-7515</id>
     </printer>
   </printers>
 </driver>

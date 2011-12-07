@@ -51,5 +51,8 @@
     <printer>
       <id>printer/Epson-EP_903A</id>
     </printer>
+    <printer>
+      <id>printer/Epson-EP_774A</id>
+    </printer>
   </printers>
 </driver>

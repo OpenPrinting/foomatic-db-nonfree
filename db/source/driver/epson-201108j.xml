@@ -1,5 +1,5 @@
-<driver id="driver/epson-201103j">
-  <name>epson-201103j</name>
+<driver id="driver/epson-201108j">
+  <name>epson-201108j</name>
   <url>http://avasys.jp/linux/</url>
   <supplier>Seiko Epson Corporation</supplier>
   <manufacturersupplied>Epson</manufacturersupplied>
@@ -18,7 +18,7 @@
     </en>
   </shortdescription>
   <packages>
-    <package scope="general" fingerprint="https://linux.avasys.jp/drivers/lsb/epson-inkjet/key/fingerprint">http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/i486/*201103j*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/x86_64/*201103j*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-i386/*201103j*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-amd64/*201103j*</package>
+    <package scope="general" fingerprint="https://linux.avasys.jp/drivers/lsb/epson-inkjet/key/fingerprint">http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/i486/*201108j*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/x86_64/*201108j*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-i386/*201108j*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-amd64/*201108j*</package>
   </packages>
   <functionality>
     <maxresx>5760</maxresx>
@@ -43,7 +43,7 @@
   </comments>
   <printers>
     <printer>
-      <id>printer/Epson-PX_403A</id>
+      <id>printer/Epson-PX_404A</id>
     </printer>
   </printers>
 </driver>
