@@ -1,4 +1,9 @@
 2011-12-07  Seiko Epson Corporation <linux-epson-inkjet@avasys.jp>
+	* db/source/driver/epson-n10-nx127.xml,
+	  db/source/driver/epson-ep-803a-903f-series.xml:
+         Modified the supported printer list to add new models.
+
+2011-12-07  Seiko Epson Corporation <linux-epson-inkjet@avasys.jp>
 	* db/source/driver/epson-201101w.xml,
 	  db/source/driver/epson-201102w.xml,
 	  db/source/driver/epson-201103j.xml,

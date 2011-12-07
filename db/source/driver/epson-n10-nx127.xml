@@ -55,6 +55,9 @@
       <id>printer/Epson-ME_33_Series</id>
     </printer>
     <printer>
+      <id>printer/Epson-ME_10_Series</id>
+    </printer>
+    <printer>
       <id>printer/Epson-NX125_NX127_Series</id>
     </printer>
     <printer>
