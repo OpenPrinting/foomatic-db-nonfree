@@ -1,4 +1,27 @@
 2011-12-07  Seiko Epson Corporation <linux-epson-inkjet@avasys.jp>
+	* db/source/driver/epson-201102j.xml,
+	  db/source/driver/epson-201104w.xml,
+	  db/source/driver/epson-201105j.xml,
+	  db/source/driver/epson-201105w.xml,
+	  db/source/driver/epson-201106j.xml,
+	  db/source/driver/epson-201106w.xml,
+	  db/source/driver/epson-201107w.xml,
+	  db/source/driver/epson-201108j.xml,
+	  db/source/driver/epson-201108w.xml,
+	  db/source/driver/epson-201109w.xml,
+	  db/source/driver/epson-201110j.xml,
+	  db/source/driver/epson-201110w.xml,
+	  db/source/driver/epson-201111j.xml,
+	  db/source/driver/epson-201111w.xml,
+	  db/source/driver/epson-201112j.xml,
+	  db/source/driver/epson-201112w.xml,
+	  db/source/driver/epson-201113j.xml,
+	  db/source/driver/epson-201113w.xml,
+	  db/source/driver/epson-201115j.xml,
+	  db/source/driver/epson-201115w.xml:
+         Added new drivers.
+
+2011-12-07  Seiko Epson Corporation <linux-epson-inkjet@avasys.jp>
 	* db/source/driver/epson-n10-nx127.xml,
 	  db/source/driver/epson-ep-803a-903f-series.xml:
          Modified the supported printer list to add new models.
