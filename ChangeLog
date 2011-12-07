@@ -1,3 +1,12 @@
+2011-12-07  Seiko Epson Corporation <linux-epson-inkjet@avasys.jp>
+	* db/source/driver/epson-201101w.xml,
+	  db/source/driver/epson-201102w.xml,
+	  db/source/driver/epson-201103j.xml,
+	  db/source/driver/epson-workforce-635-60-nx625-series.xml,
+	  db/source/driver/epson-px-603f-503a-203-series.xml,
+	  db/source/driver/epson-ep-703a.xml:
+	  Modified driver's name in the link of <packages>.
+
 2011-06-10  Seiko Epson Corporation <linux-epson-inkjet@avasys.jp>
 	* db/source/driver/epson-201103j.xml,
 	  db/source/driver/epson-k100-k200-series.xml,
