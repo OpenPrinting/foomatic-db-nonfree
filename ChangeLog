@@ -1,3 +1,7 @@
+2012-01-18  Seiko Epson Corporation <linux-printer@epson.jp>
+	* db/source/driver/epson-201115w.xml:
+	Modified the supported printer list to add a new model.
+
 2011-12-07  Seiko Epson Corporation <linux-epson-inkjet@avasys.jp>
 	* db/source/driver/epson-201102j.xml,
 	  db/source/driver/epson-201104w.xml,
