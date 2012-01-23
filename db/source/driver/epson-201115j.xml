@@ -18,7 +18,7 @@
     </en>
   </shortdescription>
   <packages>
-    <package scope="general" fingerprint="https://intouch.ebz.epson.net/key/fingerprint">http://download.ebz.epson.net/dsc/op/stable/RPMS/i486/*201115j*;*201115j*;http://download.ebz.epson.net/dsc/op/stable/debian/dists/lsb3.2/main/binary-i386/*201115j*;http://download.ebz.epson.net/dsc/op/stable/debian/dists/lsb3.2/main/binary-amd64/*201115j*</package>
+    <package scope="general" fingerprint="https://intouch.ebz.epson.net/key/fingerprint">http://download.ebz.epson.net/dsc/op/stable/RPMS/i486/*201115j*;http://download.ebz.epson.net/dsc/op/stable/RPMS/x86_64/*201115j*;http://download.ebz.epson.net/dsc/op/stable/debian/dists/lsb3.2/main/binary-i386/*201115j*;http://download.ebz.epson.net/dsc/op/stable/debian/dists/lsb3.2/main/binary-amd64/*201115j*</package>
   </packages>
   <functionality>
     <maxresx>5760</maxresx>

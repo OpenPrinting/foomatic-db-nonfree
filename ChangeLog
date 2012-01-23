@@ -1,4 +1,5 @@
 2012-02-23  Seiko Epson Corporation <linux-printer@epson.jp>
+	* db/source/driver/epson-201101w.xml:
 	* db/source/driver/epson-201115j.xml:
 	Download site was changed from Avasys to Epson.
 
