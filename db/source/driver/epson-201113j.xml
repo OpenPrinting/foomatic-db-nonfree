@@ -1,16 +1,16 @@
 <driver id="driver/epson-201113j">
   <name>epson-201113j</name>
-  <url>http://avasys.jp/english/linux_e/</url>
+  <url>http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX</url>
   <supplier>Seiko Epson Corporation</supplier>
   <manufacturersupplied>Epson</manufacturersupplied>
   <license>LGPL and SEIKO EPSON CORPORATION SOFTWARE LICENSE AGREEMENT</license>
   <licensetext>
-    <en url="http://avasys.jp/eng/linux_driver/se_terms_2_en.txt" />
-    <ja url="http://avasys.jp/product/linux_driver/se_terms_2_ja.txt" />
+    <en url="http://download.ebz.epson.net/dsc/op_license/se_terms_2_en.txt" />
+    <ja url="http://download.ebz.epson.net/dsc/op_license/se_terms_2_ja.txt" />
   </licensetext>
   <nonfreesoftware />
   <supportcontacts>
-    <supportcontact url="http://avasys.jp/english/linux_e/contact/" level="voluntary">AVASYS Corporation</supportcontact>
+    <supportcontact url="http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX" level="voluntary">Seiko Epson Corporation</supportcontact>
   </supportcontacts>
   <shortdescription>
     <en>
@@ -18,7 +18,7 @@
     </en>
   </shortdescription>
   <packages>
-    <package scope="general" fingerprint="https://linux.avasys.jp/drivers/lsb/epson-inkjet/key/fingerprint">http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/i486/*201113j*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/RPMS/x86_64/*201113j*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-i386/*201113j*;http://linux.avasys.jp/drivers/lsb/epson-inkjet/stable/debian/dists/lsb3.2/main/binary-amd64/*201113j*</package>
+    <package scope="general" fingerprint="https://intouch.ebz.epson.net/key/fingerprint">http://download.ebz.epson.net/dsc/op/stable/RPMS/i486/*201113j*;http://download.ebz.epson.net/dsc/op/stable/RPMS/x86_64/*201113j*;http://download.ebz.epson.net/dsc/op/stable/debian/dists/lsb3.2/main/binary-i386/*201113j*;http://download.ebz.epson.net/dsc/op/stable/debian/dists/lsb3.2/main/binary-amd64/*201113j*</package>
   </packages>
   <functionality>
     <maxresx>5760</maxresx>
@@ -38,7 +38,8 @@
       System (CUPS) under Linux. It supplies high quality printing
       with Seiko Epson Color Ink Jet Printers. &lt;p&gt;
 
-      For a list of printers supported by this package, please refer to the &lt;a href=&quot;http://avasys.jp/english/linux_e/&quot;&gt;Avasys web site&lt;/a&gt;: &lt;p&gt;
+      For a list of printers supported by this package, please refer to the &lt;a href=&quot;http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX&quot;&gt;EPSON Download Center&lt;/a&gt;: &lt;p&gt;
+
     </en>
   </comments>
   <printers>
