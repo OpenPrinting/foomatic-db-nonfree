@@ -93,5 +93,26 @@
     <printer>
       <id>printer/Epson-WP-4545</id>
     </printer>
+    <printer>
+      <id>printer/Epson-WP-4090</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-WP-4091</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-WP-4092</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-WP-4095</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-WP-4590</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-WP-4592</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-WP-4595</id>
+    </printer>
   </printers>
 </driver>

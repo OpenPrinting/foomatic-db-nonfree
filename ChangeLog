@@ -1,3 +1,7 @@
+2012-03-02  Seiko Epson Corporation <linux-printer@epson.jp>
+	* db/source/driver/epson-201113w.xml:
+	7 printers were added to the driver.
+
 2012-02-20  Seiko Epson Corporation <linux-printer@epson.jp>
 	* db/source/driver/epson-201102j.xml,
 	  db/source/driver/epson-201102w.xml,
