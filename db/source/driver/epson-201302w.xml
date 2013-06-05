@@ -1,0 +1,52 @@
+<driver id="driver/epson-201302w">
+  <name>epson-201302w</name>
+  <url>http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX</url>
+  <supplier>Seiko Epson Corporation</supplier>
+  <manufacturersupplied>Epson</manufacturersupplied>
+  <license>LGPL and SEIKO EPSON CORPORATION SOFTWARE LICENSE AGREEMENT</license>
+  <licensetext>
+    <en url="http://download.ebz.epson.net/dsc/op_license/se_terms_2_en.txt" />
+    <ja url="http://download.ebz.epson.net/dsc/op_license/se_terms_2_ja.txt" />
+  </licensetext>
+  <nonfreesoftware />
+  <supportcontacts>
+    <supportcontact url="http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX" level="voluntary">Seiko Epson Corporation</supportcontact>
+  </supportcontacts>
+  <shortdescription>
+    <en>
+      Epson Inkjet Printer Driver for Linux
+    </en>
+  </shortdescription>
+  <packages>
+    <package scope="general" fingerprint="https://intouch.ebz.epson.net/key/fingerprint">http://download.ebz.epson.net/dsc/op/stable/RPMS/i486/*201302w*;http://download.ebz.epson.net/dsc/op/stable/RPMS/x86_64/*201302w*;http://download.ebz.epson.net/dsc/op/stable/debian/dists/lsb3.2/main/binary-i386/*201302w*;http://download.ebz.epson.net/dsc/op/stable/debian/dists/lsb3.2/main/binary-amd64/*201302w*</package>
+  </packages>
+  <functionality>
+    <maxresx>5760</maxresx>
+    <maxresy>1440</maxresy>
+    <color />
+    <text>100</text>
+    <lineart>100</lineart>
+    <graphics>100</graphics>
+    <photo>100</photo>
+  </functionality>
+  <execution>
+    <cups />
+  </execution>
+  <comments>
+    <en>
+      This software is a filter program used with the Common UNIX Printing
+      System (CUPS) under Linux. It supplies high quality printing
+      with Seiko Epson Color Ink Jet Printers. &lt;p&gt;
+
+      For a list of printers supported by this package, please refer to the &lt;a href=&quot;http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX&quot;&gt;EPSON Download Center&lt;/a&gt;: &lt;p&gt;
+    </en>
+  </comments>
+  <printers>
+    <printer>
+      <id>printer/Epson-XP-215_217_Series</id>
+    </printer>
+    <printer>
+      <id>printer/Epson-XP-212_213_Series</id>
+    </printer>
+  </printers>
+</driver>
