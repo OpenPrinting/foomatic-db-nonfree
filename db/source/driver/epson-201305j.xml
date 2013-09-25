@@ -1,5 +1,5 @@
-<driver id="driver/epson-201203j">
-  <name>epson-201203j</name>
+<driver id="driver/epson-201305j">
+  <name>epson-201305j</name>
   <url>http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX</url>
   <supplier>Seiko Epson Corporation</supplier>
   <manufacturersupplied>Epson</manufacturersupplied>
@@ -18,7 +18,7 @@
     </en>
   </shortdescription>
   <packages>
-    <package scope="general" fingerprint="https://intouch.ebz.epson.net/key/fingerprint">http://download.ebz.epson.net/dsc/op/stable/RPMS/i486/*201203j*;http://download.ebz.epson.net/dsc/op/stable/RPMS/x86_64/*201203j*;http://download.ebz.epson.net/dsc/op/stable/debian/dists/lsb3.2/main/binary-i386/*201203j*;http://download.ebz.epson.net/dsc/op/stable/debian/dists/lsb3.2/main/binary-amd64/*201203j*</package>
+    <package scope="general" fingerprint="https://intouch.ebz.epson.net/key/fingerprint">http://download.ebz.epson.net/dsc/op/stable/RPMS/i486/*201305j*;http://download.ebz.epson.net/dsc/op/stable/RPMS/x86_64/*201305j*;http://download.ebz.epson.net/dsc/op/stable/debian/dists/lsb3.2/main/binary-i386/*201305j*;http://download.ebz.epson.net/dsc/op/stable/debian/dists/lsb3.2/main/binary-amd64/*201305j*</package>
   </packages>
   <functionality>
     <maxresx>5760</maxresx>
@@ -43,10 +43,7 @@
   </comments>
   <printers>
     <printer>
-      <id>printer/Epson-PX_405A_Series</id>
-    </printer>
-    <printer>
-      <id>printer/Epson-PX_435A_Series</id>
+      <id>printer/Epson-EP-976A3_Series</id>
     </printer>
   </printers>
 </driver>

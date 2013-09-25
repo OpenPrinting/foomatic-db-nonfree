@@ -1,3 +1,17 @@
+2013-09-25  Seiko Epson Corporation <linux-printer@epson.jp>
+	* db/source/driver/epson-201303j.xml,
+         db/source/driver/epson-201304j.xml,
+         db/source/driver/epson-201305j.xml,
+         db/source/driver/epson-201305w.xml,
+         db/source/driver/epson-201306j.xml,
+         db/source/driver/epson-201307j.xml,
+         db/source/driver/epson-201308w.xml,
+         db/source/driver/epson-201309w.xml:
+	  Added 8 new drivers.
+
+       * db/source/driver/epson-201203j.xml:
+	  Modified 1 new driver.
+
 2013-06-05  Seiko Epson Corporation <linux-printer@epson.jp>
 	* db/source/driver/epson-201301w.xml,
          db/source/driver/epson-201302w.xml,
