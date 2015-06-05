@@ -1,3 +1,8 @@
+2015-06-05  Seiko Epson Corporation <linux-printer@epson.jp>
+	* db/source/driver/epson_l800,
+         db/source/driver/epson-201401w.xml:
+	  Added new drivers.
+
 2013-09-25  Seiko Epson Corporation <linux-printer@epson.jp>
 	* db/source/driver/epson-201303j.xml,
          db/source/driver/epson-201304j.xml,
